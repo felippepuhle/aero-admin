@@ -1,0 +1,93 @@
+---
+layout: admin
+title: APPs - DataTables
+
+section: apps
+module: apps_datatables
+
+header:
+    icon: grid_on
+    title: DataTables
+    description: DataTables is a plug-in for the jQuery Javascript library. It is a highly flexible tool, based upon the foundations of progressive enhancement, and will add advanced interaction controls to any HTML table
+
+javascripts:
+    - bower_components/datatables/media/js/jquery.dataTables.js
+    - js/apps/datatables.js
+---
+
+				<section id="app_datatables">
+					<!-- ########## -->
+					<!-- DataTables -->
+					<!-- ########## -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">DataTables</h4>
+							<p>Add <code class="language-markup">class="datatable"</code> to the table tag to apply the plugin.</p>
+
+							<table class="datatable bordered">
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Item Name</th>
+										<th>Item Price</th>
+									</tr>
+								</thead>
+
+								<tbody>
+									<tr>
+										<td>Alvin</td>
+										<td>Eclair</td>
+										<td>$0.87</td>
+									</tr>
+									<tr>
+										<td>Alan</td>
+										<td>Jellybean</td>
+										<td>$3.76</td>
+									</tr>
+									<tr>
+										<td>Jonathan</td>
+										<td>Lollipop</td>
+										<td>$7.00</td>
+									</tr>
+									<tr>
+										<td>Shannon</td>
+										<td>KitKat</td>
+										<td>$9.99</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<pre>
+								<code class="language-markup">
+&lt;table class="datatable bordered">
+	&lt;thead>
+		&lt;tr>
+			&lt;th>Name&lt;/th>
+			&lt;th>Item Name&lt;/th>
+			&lt;th>Item Price&lt;/th>
+		&lt;/tr>
+	&lt;/thead>
+
+	&lt;tbody>
+		&lt;tr>
+			&lt;td>Alvin&lt;/td>
+			&lt;td>Eclair&lt;/td>
+			&lt;td>$0.87&lt;/td>
+		&lt;/tr>
+		&lt;tr>
+			&lt;td>Alan&lt;/td>
+			&lt;td>Jellybean&lt;/td>
+			&lt;td>$3.76&lt;/td>
+		&lt;/tr>
+		&lt;tr>
+			&lt;td>Jonathan&lt;/td>
+			&lt;td>Lollipop&lt;/td>
+			&lt;td>$7.00&lt;/td>
+		&lt;/tr>
+	&lt;/tbody>
+&lt;/table>
+	            	</code>
+	            </pre>
+						</div>
+					</div>
+				</section>

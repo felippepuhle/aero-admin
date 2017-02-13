@@ -1,0 +1,117 @@
+---
+layout: admin
+title: CSS - Media
+
+section: css
+module: css_media
+
+header:
+    icon: video_library
+    title: Media
+    description: Easy to use to adapt your image and videos on many ways
+
+stylesheets:
+    - css/pages/css_media.css
+---
+
+				<section id="css_media">
+					<!-- ###### -->
+					<!-- Images -->
+					<!-- ###### -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Images</h4>
+							<p>Images can be styled in different ways using Materialize.</p>
+
+							<h5 class="margin-top-35">Responsive Images</h5>
+		        	<p>To make images resize responsively to page width, you can add the class <code class="language-markup">responsive-img</code> to your image tag. It will now have a <code class="language-markup">max-width: 100%</code> and <code class="language-markup">height:auto</code>.</p>
+
+		        	<pre>
+		        		<code class="language-markup">
+&lt;img class="responsive-img" src="cool_pic.jpg">
+		        		</code>
+		        	</pre>
+
+		        	<h5 class="margin-top-35">Circular images</h5>
+		        	<div id="circular-images-wrapper" class="row no-gutter">
+		        		<div class="col s10 m6 l4">
+			        		<div class="card-panel grey lighten-5 z-depth-1">
+			        			<div class="row valign-wrapper">
+			        				<div class="col s4 m2">
+			        					<img src="img/yuna.jpg" alt="" class="circle responsive-img valign">
+			        				</div>
+			        				<div class="col s8 m10">
+			        					<span class="black-text">
+			        						This is a square image. Add the "circle" class to it to make it appear circular.
+			        					</span>
+			        				</div>
+			        			</div>
+			        		</div>
+			        	</div>
+		        	</div>
+		        	<p>To make images appear circular, simply add <code class="language-markup">class="circle"</code> to them</p>
+		        	<pre>
+		        		<code class="language-markup">
+&lt;div class="col s12 m8 offset-m2 l6 offset-l3">
+	&lt;div class="card-panel grey lighten-5 z-depth-1">
+		&lt;div class="row valign-wrapper">
+			&lt;div class="col s2">
+				&lt;img src="img/yuna.jpg" alt="" class="circle responsive-img"> &lt;!-- notice the "circle" class -->
+			&lt;/div>
+			&lt;div class="col s10">
+				&lt;span class="black-text">
+        			This is a square image. Add the "circle" class to it to make it appear circular.
+				&lt;/span>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/div>
+		        		</code>
+		        	</pre>
+						</div>
+					</div>
+
+					<!-- ###### -->
+					<!-- Videos -->
+					<!-- ###### -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Videos</h4>
+							<p>We provide a container for Embedded Videos that resizes them responsively.</p>
+
+							<h5 class="margin-top-35">Responsive Embeds</h5>
+							<p>To make your embeds responsive, merely wrap them with a containing div which has the class <code class="language-markup">video-container</code></p>
+							<div class="row no-gutter">
+				        		<div class="col s12 m12 l6">
+									<div class="video-container">
+										<iframe width="853" height="480" src="http://www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0" allowfullscreen></iframe>
+									</div>
+								</div>
+							</div>
+							<pre>
+								<code class="language-markup">
+&lt;div class="video-container">
+	&lt;iframe width="853" height="480" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0" allowfullscreen>&lt;/iframe>
+&lt;/div>
+		        		</code>
+		        	</pre>
+
+							<h5 class="margin-top-35">Responsive Videos</h5>
+							<p>To make your HTML5 Videos responsive just add the class <code class="language-markup">responsive-video</code> to the video tag.</p>
+							<div class="row no-gutter">
+				        		<div class="col s12 m12 l6">
+									<video width="100%" controls>
+										<source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4">
+									</video>
+								</div>
+							</div>
+							<pre>
+								<code class="language-markup">
+&lt;video class="responsive-video" controls>
+	&lt;source src="movie.mp4" type="video/mp4">
+&lt;/video>
+		        		</code>
+		        	</pre>
+						</div>
+					</div>
+				</section>

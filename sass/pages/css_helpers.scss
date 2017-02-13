@@ -1,0 +1,33 @@
+#css_helpers {
+	.valign-demo, .talign-demo {
+		background-color: #e7e7e6;
+
+		h6 {
+			width: 100%;
+			font-size: 1.5rem;
+			color: #545454;
+		}
+
+		&.valign-demo {
+			height: 150px;
+		}
+
+		&.talign-demo {
+			padding: 20px;
+		}
+	}
+
+	#hiding-content-wrapper {
+		table {
+			tbody {
+				background-color: #FEFEFE;
+			}
+		}
+	}
+
+	#truncate-demo-wrapper {
+		h6 {
+			font-size: 1.5rem;
+		}
+	}
+}

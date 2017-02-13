@@ -1,0 +1,60 @@
+/*
+ * Custom colors
+ */
+$error: color("materialize-red", "lighten-1");
+$success: color("light-green", "base");
+
+.error {
+  background-color: $error !important;
+}
+.success {
+  background-color: $success !important;
+}
+
+.error-text {
+  color: $error;
+}
+.success-text {
+  color: $success;
+}
+
+/*
+ * Social media colors
+ */
+$googlePlus: #D34836;
+$facebook: #47639E;
+$twitter: #02A8F3;
+$linkedin: #0077B5;
+$github: #4078c0;
+
+.google-plus {
+  background-color: $googlePlus !important;
+}
+.facebook {
+  background-color: $facebook !important;
+}
+.twitter {
+  background-color: $twitter !important;
+}
+.linkedin {
+  background-color: $linkedin !important;
+}
+.github {
+  background-color: $github !important;
+}
+
+.google-plus-text {
+  color: $googlePlus;
+}
+.facebook-text {
+  color: $facebook;
+}
+.twitter-text {
+  color: $twitter;
+}
+.linkedin-text {
+  color: $linkedin;
+}
+.github-text {
+  color: $github;
+}

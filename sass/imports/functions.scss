@@ -1,0 +1,8 @@
+@function lightenDarken($color, $amount) {
+    @if lightness($color) > 70% {
+        @return darken($color, $amount)
+    }
+    @else {
+        @return lighten($color, $amount)
+    }
+}

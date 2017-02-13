@@ -1,0 +1,163 @@
+/*
+ * Default table
+ */
+table {
+	color: #737373;
+	width: 100% !important;
+
+	> thead {
+		background-color: #FCFCFC;
+		border-bottom: 1px solid #F0F0F0;
+
+		th {
+			font-weight: 500;
+			text-transform: uppercase;
+		}
+	}
+
+	> tbody {
+		background-color: #FFF;
+	}
+
+	th, td {
+		border-radius: 0px;
+	}
+
+	&.striped {
+		> tbody {
+			> tr:nth-child(odd) {
+				background-color: inherit;
+			}
+			> tr:nth-child(even) {
+				background-color: #FCFCFC;
+			}
+		}
+	}
+
+	&.highlight {
+		tr:hover {
+			background-color: #FCFCFC !important;
+		}
+	}
+
+	&.bordered {
+		> thead > tr, 
+		> tbody > tr {
+			border-bottom: 1px solid #F0F0F0;
+		}
+	}
+}
+
+
+/*
+ * DataTables
+ */
+.dataTables_wrapper {
+	position: relative;
+
+	table.dataTable {
+		thead {
+			th, td {
+				border-bottom: none !important;
+			}
+
+			.sorting,
+			.sorting_asc,
+			.sorting_desc {
+				padding-right: 30px;
+			}
+
+			.sorting,
+			.sorting_asc,
+			.sorting_desc,
+			.sorting_asc_disabled,
+			.sorting_desc_disabled {
+				cursor: pointer;
+  				position: relative;
+
+  				&:before,
+  				&:after {
+  					position: absolute;
+  					bottom: 11px;
+  					display: block;
+  					opacity: 0.3;
+  					font-size: 1.3em;
+  				}
+
+				&:before {
+					right: 1em;
+  					content: "\2191";
+				}
+
+				&:after {
+					right: 0.5em;
+  					content: "\2193";
+				}
+			}
+
+			.sorting_asc:before,
+			.sorting_desc:after {
+				opacity: 1;
+			}
+
+			.sorting_asc_disabled:before,
+			.sorting_desc_disabled:after {
+				opacity: 0;
+			}
+		}
+
+		&.no-footer {
+			border-bottom: none !important;
+		}
+	}
+
+	.row {
+		margin-bottom: 0rem;
+	}
+
+	.dataTables_length.input-field {
+		label {
+			left: 0rem;
+		}
+	}
+
+	.dataTables_filter.input-field.without-search-bar {
+		input {
+			background-color: transparent !important;
+			padding-left: 0rem;
+			width: 100%;
+		}
+
+		label {
+			@media (max-width: 600px) {
+				left: 0rem !important;
+			}
+
+			@media (min-width: 601px) {
+				left: auto !important;
+				right: 0rem;
+			}
+		}
+	}
+
+	.dataTables_info {
+		padding-top: 15px;
+		color: #9e9e9e;
+	}
+
+	.dataTables_paginate {
+		padding-top: 10px;
+		text-align: right;
+
+		a:not(.current):not(.disabled) {
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+	}
+
+	.dataTables_empty {
+		text-align: center;
+		color: #9e9e9e;
+	}
+}

@@ -1,0 +1,558 @@
+---
+layout: admin
+title: Components - Navbar
+
+section: components
+module: components_navbar
+
+header:
+    icon: vertical_align_top
+    title: Navbar
+    description: The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or right.
+---
+
+				<section id="components_navbar">
+					<!-- ################### -->
+					<!-- Right Aligned Links -->
+					<!-- ################### -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Right Aligned Links</h4>
+
+							<p>To right align your navbar links, just add a <code class="language-markup">right</code> class to your <code class="language-markup">&lt;ul></code> that contains them.</p>
+
+							<nav>
+								<div class="col s12">
+									<div class="nav-wrapper">
+										<a href="index.html" class="brand-logo">Logo</a>
+										<ul class="right hide-on-med-and-down">
+											<li><a href="css_color.html">CSS</a></li>
+											<li><a href="components_badges.html">Components</a></li>
+											<li><a href="js_collapsible.html">Javascript</a></li>
+										</ul>
+									</div>
+								</div>
+							</nav>
+
+	            <pre>
+	            	<code class="language-markup">
+&lt;nav>
+	&lt;div class="nav-wrapper">
+		&lt;a href="#" class="brand-logo">Logo&lt;/a>
+		&lt;ul id="nav-mobile" class="right hide-on-med-and-down">
+			&lt;li>&lt;a href="css_color.html">CSS&lt;/a>&lt;/li>
+			&lt;li>&lt;a href="components_badges.html">Components&lt;/a>&lt;/li>
+			&lt;li>&lt;a href="js_collapsible.html">Javascript&lt;/a>&lt;/li>
+		&lt;/ul>
+	&lt;/div>
+&lt;/nav>
+	            	</code>
+	            </pre>
+						</div>
+					</div>
+
+
+					<!-- ################### -->
+					<!-- Left Aligned Links -->
+					<!-- ################### -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Left Aligned Links</h4>
+
+							<p>To left align your navbar links, just add a <code class="language-markup">left</code> class to your <code class="language-markup">&lt;ul></code> that contains them.</p>
+
+							<nav>
+								<div class="col s12">
+									<div class="nav-wrapper">
+										<a href="index.html" class="brand-logo right">Logo</a>
+										<ul class="left hide-on-med-and-down">
+											<li><a href="css_color.html">CSS</a></li>
+											<li><a href="components_badges.html">Components</a></li>
+											<li><a href="js_collapsible.html">Javascript</a></li>
+										</ul>
+									</div>
+								</div>
+							</nav>
+
+	            <pre>
+	            	<code class="language-markup">
+&lt;nav>
+	&lt;div class="nav-wrapper">
+		&lt;a href="#" class="brand-logo right">Logo&lt;/a>
+		&lt;ul id="nav-mobile" class="left hide-on-med-and-down">
+			&lt;li>&lt;a href="css_color.html">CSS&lt;/a>&lt;/li>
+			&lt;li>&lt;a href="components_badges.html">Components&lt;/a>&lt;/li>
+			&lt;li>&lt;a href="js_collapsible.html">Javascript&lt;/a>&lt;/li>
+		&lt;/ul>
+	&lt;/div>
+&lt;/nav>
+	            	</code>
+	            </pre>
+						</div>
+					</div>
+
+
+					<!-- ################## -->
+					<!-- Centering the logo -->
+					<!-- ################## -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Centering the logo</h4>
+
+							<p>The logo will center itself on medium and down screens, but if you want the logo to always be centered, add the <code class="language-markup">center</code> class to your <code class="language-markup">&lt;a class="brand-logo"></code>. You will have to make sure yourself that links do not overlap if you use this.</p>
+
+							<nav>
+								<div class="col s12">
+									<div class="nav-wrapper">
+										<a href="index.html" class="brand-logo center">Logo</a>
+										<ul class="left hide-on-med-and-down">
+											<li><a href="css_color.html">CSS</a></li>
+											<li><a href="components_badges.html">Components</a></li>
+										</ul>
+									</div>
+								</div>
+							</nav>
+
+	            <pre>
+	            	<code class="language-markup">
+&lt;nav>
+	&lt;div class="nav-wrapper">
+		&lt;a href="#" class="brand-logo center">Logo&lt;/a>
+		&lt;ul id="nav-mobile" class="left hide-on-med-and-down">
+			&lt;li>&lt;a href="css_color.html">CSS&lt;/a>&lt;/li>
+			&lt;li>&lt;a href="components_badges.html">Components&lt;/a>&lt;/li>
+			&lt;li>&lt;a href="js_collapsible.html">Javascript&lt;/a>&lt;/li>
+		&lt;/ul>
+	&lt;/div>
+&lt;/nav>
+	            	</code>
+	            </pre>
+						</div>
+					</div>
+
+
+					<!-- ############ -->
+					<!-- Active Items -->
+					<!-- ############ -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Active Items</h4>
+
+							<p>
+								Add active class to your li tags to denote the current page.
+							</p>
+
+							<nav>
+								<div class="col s12">
+									<div class="nav-wrapper">
+										<a href="index.html" class="brand-logo center">Logo</a>
+										<ul class="left hide-on-med-and-down">
+											<li><a href="css_color.html">CSS</a></li>
+											<li><a href="components_badges.html">Components</a></li>
+											<li class="active"><a href="js_collapsible.html">Javascript</a></li>
+										</ul>
+									</div>
+								</div>
+							</nav>
+
+	            <pre>
+	            	<code class="language-markup">
+&lt;nav>
+	&lt;div class="nav-wrapper">
+		&lt;a href="index.html" class="brand-logo">Logo&lt;/a>
+		&lt;ul class="right hide-on-med-and-down">
+			&lt;li>&lt;a href="css_color.html">CSS&lt;/a>&lt;/li>
+			&lt;li>&lt;a href="components_badges.html">Components&lt;/a>&lt;/li>
+			&lt;li class="active">&lt;a href="js_collapsible.html">Javascript&lt;/a>&lt;/li>
+		&lt;/ul>
+	&lt;/div>
+&lt;/nav>
+	            	</code>
+	            </pre>
+						</div>
+					</div>
+
+
+					<!-- ######################### -->
+					<!-- Extended Navbar with Tabs -->
+					<!-- ######################### -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Extended Navbar with Tabs</h4>
+
+              <p>To add extended components to the navbar, add the class <code class="language-markup">extended-nav</code> to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.</p>
+
+              <nav class="nav-extended">
+                <div class="nav-wrapper">
+                  <a href="#" class="brand-logo">Logo</a>
+                  <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="badges.html">Components</a></li>
+                    <li><a href="collapsible.html">JavaScript</a></li>
+                  </ul>
+                  <ul class="side-nav" id="mobile-demo">
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="badges.html">Components</a></li>
+                    <li><a href="collapsible.html">JavaScript</a></li>
+                  </ul>
+
+                  <ul class="tabs">
+                    <li class="tab"><a href="#test1">Test 1</a></li>
+                    <li class="tab"><a class="active" href="#test2">Test 2</a></li>
+                    <li class="tab disabled"><a href="#test3">Disabled Tab</a></li>
+                    <li class="tab"><a href="#test4">Test 4</a></li>
+                  </ul>
+                </div>
+              </nav>
+              <br>
+              <div id="test1" class="col s12">Test 1</div>
+              <div id="test2" class="col s12">Test 2</div>
+              <div id="test3" class="col s12">Test 3</div>
+              <div id="test4" class="col s12">Test 4</div>
+              <br>
+
+	            <pre>
+	            	<code class="language-markup">
+&lt;nav class="nav-extended">
+  &lt;div class="nav-wrapper">
+    &lt;a href="#" class="brand-logo">Logo&lt;/a>
+    &lt;a href="#" data-activates="mobile-demo" class="button-collapse">&lt;i class="material-icons">menu&lt;/i>&lt;/a>
+    &lt;ul id="nav-mobile" class="right hide-on-med-and-down">
+      &lt;li>&lt;a href="sass.html">Sass&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="badges.html">Components&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="collapsible.html">JavaScript&lt;/a>&lt;/li>
+    &lt;/ul>
+    &lt;ul class="side-nav" id="mobile-demo">
+      &lt;li>&lt;a href="sass.html">Sass&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="badges.html">Components&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="collapsible.html">JavaScript&lt;/a>&lt;/li>
+    &lt;/ul>
+
+    &lt;ul class="tabs">
+      &lt;li class="tab">&lt;a href="#test1">Test 1&lt;/a>&lt;/li>
+      &lt;li class="tab">&lt;a class="active" href="#test2">Test 2&lt;/a>&lt;/li>
+      &lt;li class="tab disabled">&lt;a href="#test3">Disabled Tab&lt;/a>&lt;/li>
+      &lt;li class="tab">&lt;a href="#test4">Test 4&lt;/a>&lt;/li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/nav>
+&lt;div id="test1" class="col s12">Test 1&lt;/div>
+&lt;div id="test2" class="col s12">Test 2&lt;/div>
+&lt;div id="test3" class="col s12">Test 3&lt;/div>
+&lt;div id="test4" class="col s12">Test 4&lt;/div>
+	            	</code>
+	            </pre>
+						</div>
+					</div>
+
+
+					<!-- ############ -->
+					<!-- Fixed Navbar -->
+					<!-- ############ -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Fixed Navbar</h4>
+
+							<p>To make the navbar fixed, you have to add an outer wrapping div with the class <code class="language-markup">navbar-fixed</code>. This will offset your other content while making your nav fixed. You can adjust the height of this outer div to change how much offset is on your content.</p>
+
+	            <pre>
+	            	<code class="language-markup">
+&lt;div class="navbar-fixed">
+	&lt;nav>
+		&lt;div class="nav-wrapper">
+			&lt;a href="index.html" class="brand-logo">Logo&lt;/a>
+			&lt;ul class="right hide-on-med-and-down">
+				&lt;li>&lt;a href="css_color.html">CSS&lt;/a>&lt;/li>
+				&lt;li>&lt;a href="components_badges.html">Components&lt;/a>&lt;/li>
+			&lt;/ul>
+		&lt;/div>
+	&lt;/nav>
+&lt;/div>
+	            	</code>
+	            </pre>
+						</div>
+					</div>
+
+
+					<!-- #################### -->
+					<!-- Navbar Dropdown Menu -->
+					<!-- #################### -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Navbar Dropdown Menu</h4>
+
+							<p>To add a navbar dropdown menu, add the <code class="language-markup">ul</code> dropdown structure into the page. Then, add an element to trigger the dropdown menu. Make sure to supply the id of the dropdown structure to the <code class="language-markup">data-activates</code> attribute of the dropdown trigger.</p>
+
+							<ul id="dropdown1" class="dropdown-content">
+								<li><a href="index.html">one</a></li>
+								<li><a href="index.html">two</a></li>
+								<li class="divider"></li>
+								<li><a href="index.html">three</a></li>
+							</ul>
+							<nav>
+								<div class="col s12">
+									<div class="nav-wrapper">
+										<a href="index.html" class="brand-logo">Logo</a>
+										<ul class="right hide-on-med-and-down">
+											<li><a href="css_color.html">CSS</a></li>
+											<li><a href="components_badges.html">Components</a></li>
+											<li><a class="dropdown-button" href="index.html" data-activates="dropdown1">Dropdown<i class="material-icons dropdown-icon right">arrow_drop_down</i></a></li>
+										</ul>
+									</div>
+								</div>
+							</nav>
+
+	            <pre>
+	            	<code class="language-markup">
+&lt;!-- Dropdown Structure -->
+&lt;ul id="dropdown1" class="dropdown-content">
+	&lt;li>&lt;a href="index.html">one&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="index.html">two&lt;/a>&lt;/li>
+	&lt;li class="divider">&lt;/li>
+	&lt;li>&lt;a href="index.html">three&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;nav>
+	&lt;div class="nav-wrapper">
+		&lt;a href="index.html" class="brand-logo">Logo&lt;/a>
+		&lt;ul class="right hide-on-med-and-down">
+			&lt;li>&lt;a href="css_color.html">CSS&lt;/a>&lt;/li>
+			&lt;li>&lt;a href="components_badges.html">Components&lt;/a>&lt;/li>
+			&lt;!-- Dropdown Trigger -->
+			&lt;li>&lt;a class="dropdown-button" href="index.html" data-activates="dropdown1">Dropdown&lt;i class="material-icons dropdown-icon right">arrow_drop_down</i>&lt;/i>&lt;/a>&lt;/li>
+		&lt;/ul>
+	&lt;/div>
+&lt;/nav>
+	            	</code>
+	            </pre>
+
+	            <p>To activate the dropdown menu, insert this line of code into your JavaScript file, within the <code class="language-javascript">$( document ).ready(function)</code> block</p>
+
+	            <pre>
+	            	<code class="language-javascript">
+$(".dropdown-button").dropdown();
+	            	</code>
+	            </pre>
+
+	            <h5 class="margin-top-35">Trigger dropdown menu on click</h5>
+
+	            <p>By default, the dropdown menu is activated by hovering over the dropdown trigger. To activate the dropdown menu on click, pass <code class="language-javascript">{ hover: false }</code> into the above <code class="language-javascript">dropdown()</code> function</p>
+						</div>
+					</div>
+
+
+					<!-- ########## -->
+					<!-- Icon Links -->
+					<!-- ########## -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Icon Links</h4>
+
+							<nav>
+								<div class="col s12">
+									<div class="nav-wrapper">
+										<a href="index.html" class="brand-logo">Logo</a>
+										<ul class="right hide-on-med-and-down">
+											<li><a href="sass.html"><i class="material-icons">search</i></a></li>
+											<li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
+											<li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
+											<li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+										</ul>
+									</div>
+								</div>
+							</nav>
+
+							<p>You can add icons into links. For icon only links you don't need any additional class. Just pop the <code class="language-markup">i</code> tag in and it will work.</p>
+
+	            <pre>
+	            	<code class="language-markup">
+&lt;nav>
+	&lt;div class="nav-wrapper">
+		&lt;a href="index.html" class="brand-logo">Logo&lt;/a>
+		&lt;ul class="right hide-on-med-and-down">
+			&lt;li>&lt;a href="sass.html">&lt;i class="material-icons">search&lt;/i>&lt;/a>&lt;/li>
+			&lt;li>&lt;a href="badges.html">&lt;i class="material-icons">view_module&lt;/i>&lt;/a>&lt;/li>
+			&lt;li>&lt;a href="collapsible.html">&lt;i class="material-icons">refresh&lt;/i>&lt;/a>&lt;/li>
+			&lt;li>&lt;a href="mobile.html">&lt;i class="material-icons">more_vert&lt;/i>&lt;/a>&lt;/li>
+		&lt;/ul>
+	&lt;/div>
+&lt;/nav>
+	            	</code>
+	            </pre>
+
+	            <nav>
+								<div class="col s12">
+		            	<div class="nav-wrapper">
+		            		<a href="index.html" class="brand-logo">Logo</a>
+		            		<ul class="right hide-on-med-and-down">
+		            			<li><a href="sass.html"><i class="material-icons left">search</i>Link with Left Icon</a></li>
+		            			<li><a href="badges.html"><i class="material-icons right">view_module</i></i>Link with Right Icon</a></li>
+		            		</ul>
+		            	</div>
+	            	</div>
+	            </nav>
+
+	            <p>For adding an icon to a text link you need to add either a <code class="language-markup">left</code> or <code class="language-markup">right</code> class to the icon depending on where you want the icon to be.</p>
+
+	            <pre>
+	            	<code class="language-markup">
+&lt;nav>
+	&lt;div class="nav-wrapper">
+		&lt;a href="index.html" class="brand-logo">Logo&lt;/a>
+		&lt;ul class="right hide-on-med-and-down">
+			&lt;li>&lt;a href="sass.html">&lt;i class="material-icons left">search&lt;/i>Link with Left Icon&lt;/a>&lt;/li>
+			&lt;li>&lt;a href="badges.html">&lt;i class="material-icons right">view_module</i>&lt;/i>Link with Right Icon&lt;/a>&lt;/li>
+		&lt;/ul>
+	&lt;/div>
+&lt;/nav>
+	            	</code>
+	            </pre>
+						</div>
+					</div>
+
+
+					<!-- ####### -->
+					<!-- Buttons -->
+					<!-- ####### -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Buttons</h4>
+
+							<nav>
+								<div class="col s12">
+									<div class="nav-wrapper">
+										<a href="index.html" class="brand-logo">Logo</a>
+										<ul class="right hide-on-med-and-down">
+											<li><a>A link</a></li>
+											<li><a class="waves-effect waves-light btn">A button</a></li>
+											<li><a class="waves-effect waves-light btn-large">A large button</a></li>
+										</ul>
+									</div>
+								</div>
+							</nav>
+
+							<p>You can add buttons into links. For buttons you don't need any additional class. Just pop the <code class="language-markup">.btn</code> class on the <code class="language-markup">a</code> tag.</p>
+
+	            <pre>
+	            	<code class="language-markup">
+&lt;nav>
+	&lt;div class="nav-wrapper">
+		&lt;a href="index.html" class="brand-logo">Logo&lt;/a>
+		&lt;ul class="right hide-on-med-and-down">
+			&lt;li>&lt;a href="#">A link&lt;/a>&lt;/li>
+			&lt;li>&lt;a class="waves-effect waves-light btn">A button&lt;/a>&lt;/li>
+			&lt;li>&lt;a class="waves-effect waves-light btn-large">A large button&lt;/a>&lt;/li>
+		&lt;/ul>
+	&lt;/div>
+&lt;/nav>
+	            	</code>
+	            </pre>
+						</div>
+					</div>
+
+
+					<!-- ########## -->
+					<!-- Search Bar -->
+					<!-- ########## -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Search Bar</h4>
+
+							<nav>
+								<div class="nav-wrapper">
+									<form>
+										<div class="input-field">
+											<input id="search-example" type="search" required>
+											<label for="search"><i class="material-icons">search</i></label>
+											<i class="material-icons">close</i>
+										</div>
+									</form>
+								</div>
+							</nav>
+
+	            <pre>
+	            	<code class="language-markup">
+&lt;nav>
+	&lt;div class="nav-wrapper">
+		&lt;form>
+			&lt;div class="input-field">
+				&lt;input id="search" type="search" required>
+				&lt;label for="search">&lt;i class="material-icons">search&lt;/i>&lt;/label>
+				&lt;i class="material-icons">close&lt;/i>
+			&lt;/div>
+		&lt;/form>
+	&lt;/div>
+&lt;/nav>
+	            	</code>
+	            </pre>
+						</div>
+					</div>
+
+
+					<!-- ###################### -->
+					<!-- Mobile Collapse Button -->
+					<!-- ###################### -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Mobile Collapse Button</h4>
+
+							<nav>
+								<div class="col s12">
+									<div class="nav-wrapper">
+										<a href="index.html" class="brand-logo">Logo</a>
+										<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+										<ul class="right hide-on-med-and-down">
+											<li><a href="index.html">Dashboard</a></li>
+											<li><a href="css_color.html">CSS</a></li>
+											<li><a href="components_badges.html">Components</a></li>
+											<li><a href="js_collapsible.html">Javascript</a></li>
+											<li><a class="btn waves-effect waves-light" href="components_buttons.html">Buttons</a></li>
+										</ul>
+										<ul class="side-nav" id="mobile-demo">
+											<li><a href="index.html">Dashboard</a></li>
+											<li><a href="css_color.html">CSS</a></li>
+											<li><a href="components_badges.html">Components</a></li>
+											<li><a href="js_collapsible.html">Javascript</a></li>
+											<li><a class="btn waves-effect waves-light" href="components_buttons.html">Buttons</a></li>
+										</ul>
+									</div>
+								</div>
+							</nav>
+
+							<p>When your nav bar is resized, you will see that the links on the right turn into a hamburger icon <i class="material-icons">menu</i>. Take a look at the example below to get this functionality. Add the entire <code class="language-markup">button-collapse</code> line to your <code class="language-markup">nav</code>.</p>
+
+	            <pre>
+	            	<code class="language-markup">
+&lt;nav>
+	&lt;div class="nav-wrapper">
+		&lt;a href="index.html" class="brand-logo">Logo&lt;/a>
+		&lt;a href="#" data-activates="mobile-demo" class="button-collapse">&lt;i class="material-icons">menu</i>&lt;/i>&lt;/a>
+		&lt;ul class="right hide-on-med-and-down">
+			&lt;li>&lt;a href="index.html">Dashboard&lt;/a>&lt;/li>
+			&lt;li>&lt;a href="css_color.html">CSS&lt;/a>&lt;/li>
+			&lt;li>&lt;a href="components_badges.html">Components&lt;/a>&lt;/li>
+			&lt;li>&lt;a href="js_collapsible.html">Javascript&lt;/a>&lt;/li>
+		&lt;/ul>
+		&lt;ul class="side-nav" id="mobile-demo">
+			&lt;li>&lt;a href="index.html">Dashboard&lt;/a>&lt;/li>
+			&lt;li>&lt;a href="css_color.html">CSS&lt;/a>&lt;/li>
+			&lt;li>&lt;a href="components_badges.html">Components&lt;/a>&lt;/li>
+			&lt;li>&lt;a href="js_collapsible.html">Javascript&lt;/a>&lt;/li>
+		&lt;/ul>
+	&lt;/div>
+&lt;/nav>
+	            	</code>
+	            </pre>
+
+	            <h5 class="margin-top-35">Initialization</h5>
+
+	            <p>After including the button-collapse line into your navbar, all you have to do now is place this code in your page's <code class="language-javascript">$( document ).ready(function(){})</code> code. This example below assumes you have not modified the classes in the above example. In the case that you have, just change the jQuery selector in the line below to match it.</p>
+
+	            <pre>
+		            <code class="language-javascript">
+$(".button-collapse").sideNav();
+		            </code>
+	            </pre>
+						</div>
+					</div>
+				</section>

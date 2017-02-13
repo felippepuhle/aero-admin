@@ -1,0 +1,110 @@
+---
+layout: admin
+title: Components - Footer
+
+section: components
+module: components_footer
+
+header:
+    icon: call_to_action
+    title: Footer
+    description: Footers are a great way to organize a lot of site navigation and information at the end of a page. This is where the user will look once hes finished scrolling through the current page or is looking for additional information about your website.
+---
+
+				<section id="components_footer">
+					<!-- ############ -->
+					<!-- Introduction -->
+					<!-- ############ -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Introduction</h4>
+
+							<p>Note: We use flexbox to structure our html so that the footer is always on the bottom of the page. It is important to keep the structure of your page within the 3 HTML5 tags: <code class="language-markup">&lt;header></code>, <code class="language-markup">&lt;main></code>, <code class="language-markup">&lt;footer></code></p>
+
+							<footer class="page-footer example">
+								<div class="container">
+									<div class="row">
+										<div class="col l6 s12">
+											<h5>Footer Content</h5>
+											<p>You can use rows and columns here to organize your footer content.</p>
+										</div>
+										<div class="col l4 offset-l2 s12">
+											<h5>Links</h5>
+											<ul>
+		                    <li><a href="#!">Link 1</a></li>
+		                    <li><a href="#!">Link 2</a></li>
+		                    <li><a href="#!">Link 3</a></li>
+		                    <li><a href="#!">Link 4</a></li>
+		                    <li><a href="#!">Link 5</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="footer-copyright">
+									<div class="container">
+										© 2016 Copyright Text
+										<a class="right" href="login.html">Logout</a>
+									</div>
+								</div>
+							</footer>
+
+	            <pre>
+	            	<code class="language-markup">
+&lt;footer class="page-footer">
+	&lt;div class="container">
+		&lt;div class="row">
+			&lt;div class="col l6 s12">
+				&lt;h5>Footer Content&lt;/h5>
+				&lt;p>You can use rows and columns here to organize your footer content.&lt;/p>
+			&lt;/div>
+			&lt;div class="col l4 offset-l2 s12">
+				&lt;h5>Links&lt;/h5>
+				&lt;ul>
+					&lt;li>&lt;a href="#!">Link 1&lt;/a>&lt;/li>
+					&lt;li>&lt;a href="#!">Link 2&lt;/a>&lt;/li>
+					&lt;li>&lt;a href="#!">Link 3&lt;/a>&lt;/li>
+					&lt;li>&lt;a href="#!">Link 4&lt;/a>&lt;/li>
+					&lt;li>&lt;a href="#!">Link 5&lt;/a>&lt;/li>
+				&lt;/ul>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+	&lt;div class="footer-copyright">
+		&lt;div class="container">
+			© 2016 Copyright Text
+			&lt;a class="right" href="login.html">Logout&lt;/a>
+		&lt;/div>
+	&lt;/div>
+&lt;/footer>
+	            	</code>
+	            </pre>
+						</div>
+					</div>
+
+
+					<!-- ############# -->
+					<!-- Sticky Footer -->
+					<!-- ############# -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Sticky Footer</h4>
+
+							<p>A sticky footer always stays on the bottom of the page regardless of how little content is on the page. However, this footer will be pushed down if there is a lot of content, so it is different from a fixed footer. Add the following code to your CSS file.</p>
+		        	<p>Note: This may cause issues in Internet Explorer which has weak support for flexbox.</p>
+
+	            <pre>
+	            	<code class="language-css">
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+	            	</code>
+	            </pre>
+						</div>
+					</div>
+				</section>

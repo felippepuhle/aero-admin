@@ -1,0 +1,117 @@
+---
+layout: admin
+title: CSS - Typography
+
+section: css
+module: css_typography
+
+header:
+    icon: format_shapes
+    title: Typography
+    description: The visual component of the written word
+---
+
+				<section id="css_typography">
+					<!-- ########## -->
+					<!-- Roboto 2.0 -->
+					<!-- ########## -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Roboto 2.0</h4>
+							<p>The standard font Material Design uses is Roboto. We have included the font files with our framework.</p>
+							<p>We bundle our framework with the latest iteration of Roboto Google has released. It comes with 5 different font weights you can use: 200, 300, 400, 500, 600.</p>
+							<p>Here is an image from Google's Roboto Specimen document displaying the different font weights.</p>
+
+							<div class="row no-gutter">
+								<img class="col s12 m12 l6" src="img/css-typography-roboto.png">
+							</div>
+
+							<h5 class="margin-top-45">Removing Roboto</h5>
+							<p>In case you don't want to use Roboto on your webpage, fear not. Simply change the font stack by modifying the code below to your liking and add it to your custom css.</p>
+							<pre>
+								<code class="language-css">
+html {
+	font-family: GillSans, Calibri, Trebuchet, sans-serif;
+}
+		        		</code>
+		        	</pre>
+						</div>
+					</div>
+
+
+					<!-- ####### -->
+					<!-- Headers -->
+					<!-- ####### -->
+					<div class="row margin-top-25">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Headers</h4>
+							<p>We provide some basic styling on header tags. In the example, you can see the the 6 header tags' different sizes.</p>
+
+							<div class="row no-gutter">
+								<div class="col s12 m12 l6">
+									<div class="card-panel">
+										<h1>Heading h1</h1>
+										<h2>Heading h2</h2>
+										<h3>Heading h3</h3>
+										<h4>Heading h4</h4>
+										<h5>Heading h5</h5>
+										<h6>Heading h6</h6>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- ########### -->
+					<!-- Blockquotes -->
+					<!-- ########### -->
+					<div class="row margin-top-25">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Blockquotes</h4>
+							<p>Blockquotes are mainly used to give emphasis to a quote or citation. You can also use these for some extra text hierarchy and emphasis.</p>
+
+							<blockquote>
+								This is an example quotation that uses the blockquote tag.
+								<br>
+								Here is another line to make it look bigger.
+							</blockquote>
+
+							<pre>
+								<code class="language-markup">
+&lt;blockquote>
+	This is an example quotation that uses the blockquote tag.
+&lt;/blockquote>
+		        		</code>
+		        	</pre>
+						</div>
+					</div>
+
+
+					<!-- ######### -->
+					<!-- Flow Text -->
+					<!-- ######### -->
+					<div class="row margin-top-25">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Flow Text</h4>
+
+							<button class="btn waves-effect waves-light waves-lighten-4 classToggle margin-top-5"
+							data-class="flow-text" data-target="#flow-text-demo p">Toggle Flow-Text</button>
+
+							<div class="row no-gutter margin-top-10">
+								<div class="col s12 m12 l6">
+									<div id="flow-text-demo" class="card-panel">
+										<p class="flow-text">One common flaw we've seen in many frameworks is a lack of support for truly responsive text. While elements on the page resize fluidly, text still resizes on a fixed basis. To ameliorate this problem, for text heavy pages, we've created a class that fluidly scales text size and line-height to optimize readability for the user. Line length stays between 45-80 characters and line height scales to be larger on smaller screens.</p>
+										<p class="flow-text">To see Flow Text in action, slowly resize your browser and watch the size of this text body change! Use the button above to toggle off/on flow-text to see the difference!</p>
+									</div>
+								</div>
+							</div>
+
+							<pre>
+								<code class="language-markup">
+&lt;p class="flow-text">I am Flow Text&lt;/p>
+		        		</code>
+		        	</pre>
+						</div>
+					</div>
+				</section>

@@ -1,0 +1,128 @@
+---
+layout: admin
+title: Javascript - ScrollFire
+
+section: js
+module: js_scrollfire
+
+header:
+    icon: launch
+    title: ScrollFire
+    description: ScrollFire is a jQuery Plugin that executes callback functions depending on how far into the page you've scrolled. We'll show you how you can use this plugin with many demos and examples.
+
+javascripts:
+    - js/pages/js_scrollfire.js
+
+stylesheets:
+    - css/pages/js_scrollfire.css
+---
+
+				<section id="js_scrollfire">
+					<!-- ############################ -->
+					<!-- jQuery Plugin Initialization -->
+					<!-- ############################ -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">jQuery Plugin Initialization</h4>
+
+							<pre>
+								<code class="language-javascript">
+var options = [
+	{selector: '.class', offset: 200, callback: customCallbackFunc },
+	{selector: '.other-class', offset: 200, callback: function() {
+		customCallbackFunc();
+	}},
+];
+Materialize.scrollFire(options);
+	            	</code>
+	            </pre>
+						</div>
+					</div>
+
+
+					<!-- ##################### -->
+					<!-- jQuery Plugin Options -->
+					<!-- ##################### -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">jQuery Plugin Options</h4>
+
+							<table class="highlight">
+								<thead>
+									<tr>
+										<th>Option Name</th>
+										<th>Description</th>
+									</tr>
+								</thead>
+
+								<tbody>
+									<tr>
+										<td>Selector</td>
+										<td>The selector for the element that is being tracked.</td>
+									</tr>
+									<tr>
+										<td>Offset</td>
+										<td>If this is 0, the callback will be fired when the selector element is at the very bottom of the user's window.</td>
+									</tr>
+									<tr>
+										<td>Callback</td>
+										<td>Execute a callback function when the user scrolls to the threshold. It will only be called once.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+
+					<!-- ############### -->
+					<!-- ScrollFire Demo -->
+					<!-- ############### -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">ScrollFire Demo</h4>
+
+							<p>Scroll through slowly to get sense of what ScrollFire can do for you. This is the ScrollFire code that we have used on this page.</p>
+
+							<pre>
+	            	<code class="language-javascript">
+var options = [
+	{selector: '#staggered-test', offset: 50, callback: function() {
+		Materialize.toast("This is our ScrollFire Demo!", 1500);
+	}},
+	{selector: '#staggered-test', offset: 205, callback: function() {
+		Materialize.toast("Please continue scrolling!", 1500);
+	}},
+	{selector: '#staggered-test', offset: 500, callback: function() {
+		Materialize.showStaggeredList("#staggered-test");
+	}}
+];
+
+Materialize.scrollFire(options);
+	            	</code>
+	            </pre>
+
+	            <ul class="margin-top-35" id="staggered-test">
+	            	<li>
+	            		<h5>List Item</h5>
+	            		<p>This is a description</p>
+	            	</li>
+	            	<li>
+	            		<h5>List Item</h5>
+	            		<p>This is a description</p>
+	            	</li>
+	            	<li>
+	            		<h5>List Item</h5>
+	            		<p>This is a description</p>
+	            	</li>
+	            	<li>
+	            		<h5>List Item</h5>
+	            		<p>This is a description</p>
+	            	</li>
+	            	<li>
+	            		<h5>List Item</h5>
+	            		<p>This is a description</p>
+	            	</li>
+	            </ul>
+						</div>
+					</div>
+				</section>

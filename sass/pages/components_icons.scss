@@ -1,0 +1,23 @@
+#components_icons {
+	.material-icons.icon-demo {
+		line-height: 50px;
+	}
+
+	.icon-container {
+		margin-top: 35px;
+
+		.icon-preview {
+		    height: 120px;
+		    text-align: center;
+		
+			i {
+				font-size: 3em;
+				margin-bottom: 10px;
+			}
+
+			span {
+				display: block;
+			}
+		}
+	}
+}

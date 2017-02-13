@@ -1,0 +1,74 @@
+.pricing-table-app {
+	.promo {
+		margin-bottom: 20px;
+
+		> i {
+			margin: 15px 0;
+			font-size: 5rem;
+			display: block;
+		}
+
+		.promo-caption {
+			margin-top: 5px;
+			margin-bottom: 0;
+			font-size: 1.4rem;
+			font-weight: 500;
+		}
+
+		ul {
+			margin-top: 30px;
+			border-bottom: 1px solid #F0F0F0;
+
+			li {
+				padding: 15px 0px;
+				border-top: 1px solid #F0F0F0;
+				font-size: 1.1rem;
+				font-weight: 300;
+
+				i {
+					font-size: 1.2rem;
+				    vertical-align: -4px;
+				    margin-right: 2px;
+				}
+			}
+		}
+
+		.price {
+			margin-top: 20px;
+			font-size: 2.3rem;
+
+			i {
+				font-size: 1.4rem;
+				margin-right: -5px;
+				vertical-align: middle;
+			}
+		}
+
+		a {
+			margin-top: 20px;
+		}
+	}
+
+	.panel {
+		margin-bottom: 20px;
+
+		.promo {
+			.promo-caption {
+				color: rgba(0,0,0,0.72);
+			}
+
+			p:not(.promo-caption) {
+				color: #737373;
+			}
+		}
+
+		ul {
+			margin-left: -35px;
+			margin-right: -35px;
+		}
+
+		&.panel-bordered {
+			border-top: 3px solid #F0F0F0;
+		}
+	}
+}

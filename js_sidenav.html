@@ -1,0 +1,169 @@
+---
+layout: admin
+title: Javascript - SideNav
+
+section: js
+module: js_sidenav
+
+header:
+    icon: more_vert
+    title: SideNav
+    description: This is a slide out menu. You can add a dropdown to your sidebar by using our collapsible component. If you want to see a demo, our sidebar will use this on smaller screens. To use this in conjunction with a fullscreen navigation, you have to use two copies of the same UL.
+---
+
+				<section id="js_sidenav">
+					<!-- ############## -->
+					<!-- HTML Structure -->
+					<!-- ############## -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">HTML Structure</h4>
+
+							<pre>
+								<code class="language-markup">
+&lt;nav>
+	&lt;ul class="right hide-on-med-and-down">
+		&lt;li>&lt;a href="#!">First Sidebar Link&lt;/a>&lt;/li>
+		&lt;li>&lt;a href="#!">Second Sidebar Link&lt;/a>&lt;/li>
+	&lt;/ul>
+	&lt;ul id="slide-out" class="side-nav">
+		&lt;li>&lt;a href="#!">First Sidebar Link&lt;/a>&lt;/li>
+		&lt;li>&lt;a href="#!">Second Sidebar Link&lt;/a>&lt;/li>
+	&lt;/ul>
+	&lt;a href="#" data-activates="slide-out" class="button-collapse">&lt;i class="mdi-navigation-menu">&lt;/i>&lt;/a>
+&lt;/nav>
+	            	</code>
+	            </pre>
+
+							<h5 class="margin-top-35">jQuery Plugin Initialization</h5>
+
+							<pre>
+								<code class="language-javascript">
+// Initialize collapse button
+$(".button-collapse").sideNav();
+// Initialize collapsible (uncomment the line below if you use the dropdown variation)
+//$('.collapsible').collapsible();
+	            	</code>
+	            </pre>
+
+							<h5 class="margin-top-35">Options</h5>
+
+							<p>You can customize the sideNav by setting your own width and the alignment of the menu.</p>
+
+							<pre>
+								<code class="language-javascript">
+$('.button-collapse').sideNav({
+	menuWidth: 300, // Default is 240
+	edge: 'right', // Choose the horizontal origin
+	closeOnClick: true // Closes side-nav on &lt;a> clicks, useful for Angular/Meteor
+});
+	            	</code>
+	            </pre>
+
+							<h5 class="margin-top-35">jQuery Plugin Methods</h5>
+
+							<p>We have methods to show and hide your sidebar you can use to programmatically control your sidebar.</p>
+
+							<pre>
+								<code class="language-javascript">
+// Show sideNav
+$('.button-collapse').sideNav('show');
+// Hide sideNav
+$('.button-collapse').sideNav('hide');
+	            	</code>
+	            </pre>
+						</div>
+					</div>
+
+
+					<!-- ########## -->
+					<!-- Variations -->
+					<!-- ########## -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Variations</h4>
+
+							<h5>Dropdown HTML Structure</h5>
+
+							<pre>
+								<code class="language-markup">
+&lt;ul id="slide-out" class="side-nav">
+	&lt;li>&lt;a href="#!">First Sidebar Link&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="#!">Second Sidebar Link&lt;/a>&lt;/li>
+	&lt;li class="no-padding">
+		&lt;ul class="collapsible collapsible-accordion">
+			&lt;li>
+				&lt;a class="collapsible-header">Dropdown&lt;i class="mdi-navigation-arrow-drop-down">&lt;/i>&lt;/a>
+				&lt;div class="collapsible-body">
+					&lt;ul>
+						&lt;li>&lt;a href="#!">First&lt;/a>&lt;/li>
+						&lt;li>&lt;a href="#!">Second&lt;/a>&lt;/li>
+						&lt;li>&lt;a href="#!">Third&lt;/a>&lt;/li>
+						&lt;li>&lt;a href="#!">Fourth&lt;/a>&lt;/li>
+					&lt;/ul>
+				&lt;/div>
+			&lt;/li>
+		&lt;/ul>
+	&lt;/li>
+&lt;/ul>
+&lt;ul class="right hide-on-med-and-down">
+	&lt;li>&lt;a href="#!">First Sidebar Link&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="#!">Second Sidebar Link&lt;/a>&lt;/li>
+	&lt;li>&lt;a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown&lt;i class="mdi-navigation-arrow-drop-down right">&lt;/i>&lt;/a>&lt;/li>
+	&lt;ul id='dropdown1' class='dropdown-content'>
+		&lt;li>&lt;a href="#!">First&lt;/a>&lt;/li>
+		&lt;li>&lt;a href="#!">Second&lt;/a>&lt;/li>
+		&lt;li>&lt;a href="#!">Third&lt;/a>&lt;/li>
+		&lt;li>&lt;a href="#!">Fourth&lt;/a>&lt;/li>
+	&lt;/ul>
+&lt;/ul>
+&lt;a href="#" data-activates="slide-out" class="button-collapse">&lt;i class="mdi-navigation-menu">&lt;/i>&lt;/a>
+	            	</code>
+	            </pre>
+
+							<h5 class="margin-top-35">Fullscreen HTML Structure</h5>
+
+							<p>If you want the menu to be accessible on all screensizes you just have to add a simple helper class <code class="language-markup">show-on-large</code> to the <code class="language-markup">.button-collapse</code>. </p>
+
+							<pre>
+								<code class="language-markup">
+&lt;ul id="slide-out" class="side-nav">
+	&lt;li>&lt;a href="#!">First Sidebar Link&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="#!">Second Sidebar Link&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;a href="#" data-activates="slide-out" class="button-collapse show-on-large">&lt;i class="mdi-navigation-menu">&lt;/i>&lt;/a>
+	            	</code>
+	            </pre>
+
+							<h5 class="margin-top-35">Fixed HTML Structure</h5>
+
+							<p>Add the class <code class="language-markup">fixed</code> to have the sideNav be fixed and open on large screens and hides to the regular functionality on smaller screens. Our sideNav on the left is an example of this.</p>
+
+							<pre>
+								<code class="language-markup">
+&lt;ul id="slide-out" class="side-nav fixed">
+	&lt;li>&lt;a href="#!">First Sidebar Link&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="#!">Second Sidebar Link&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;a href="#" data-activates="slide-out" class="button-collapse">&lt;i class="mdi-navigation-menu">&lt;/i>&lt;/a>
+	            	</code>
+	            </pre>
+
+	            <p>If you are planning on using this you will have to offset your content by the width of the side menu. Place the padding on where the offset content will be, which in our case is in header, main and footer.</p>
+
+							<pre>
+								<code class="language-css">
+header, main, footer {
+	padding-left: 240px;
+}
+
+@media only screen and (max-width : 992px) {
+	header, main, footer {
+		padding-left: 0;
+	}
+}
+	            	</code>
+	            </pre>
+						</div>
+					</div>
+				</section>

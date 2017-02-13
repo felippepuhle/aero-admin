@@ -1,0 +1,62 @@
+@import "imports/colors";
+@import "imports/functions";
+@import "imports/mixins";
+
+#theme-switcher {
+	@include transition(0.2s, ease);
+	position: fixed;
+	z-index: 995;
+	top: 78px;
+	right: -207px;
+	width: 207px;
+	background: #FFF;
+	border: 1px solid #F0F0F0;
+
+	.theme-button {
+		position: absolute;
+		left: -54px;
+		top: -1px;
+		padding: 10px 15px;
+		z-index: 1045;
+		cursor: pointer;
+		color: #282828;
+		background: #FFF;
+		border: 1px solid #F0F0F0;
+		border-right-width: 0;
+	}
+
+	.theme-title {
+		padding: 10px 15px;
+		font-size: 1.3em;
+		color: #282828;
+	}
+
+	.theme-content {
+		padding: 0px 15px;
+
+		.title {
+		    font-size: 1rem;
+		    font-weight: 300;
+		    color: #282828;
+		    margin-bottom: 10px;
+		}
+
+		@each $color_name, $color in $colors {
+			@each $color_type, $color_value in $color {
+				@if $color_type == "base" {
+					.change-#{$color_name} {
+						[type="radio"]:not(:checked) + label:before {
+						    border-color: $color_value;
+						}
+
+						@include materialRadios($color_value);
+					}
+				}
+			}
+		}
+	}
+
+	&.active {
+		right: 0px;
+	}
+}

@@ -1,0 +1,393 @@
+---
+layout: admin
+title: Components - Preloader
+
+section: components
+module: components_preloader
+
+header:
+    icon: autorenew
+    title: Preloader
+    description: If you have content that will take a long time to load, you should give the user feedback. For this reason we provide a number activity + progress indicators.
+---
+
+				<section id="components_preloader">
+					<!-- ###### -->
+					<!-- Linear -->
+					<!-- ###### -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Linear</h4>
+
+							<p>There are a couple different types of linear progress bars.</p>
+
+							<h5 class="margin-top-35">Determinate</h5>
+
+							<div class="row no-gutter">
+								<div class="div col s8 offset-s2">
+									<div class="progress">
+										<div class="determinate" style="width: 70%"></div>
+									</div>
+								</div>
+							</div>
+
+	            <pre>
+	            	<code class="language-markup">
+&lt;div class="progress">
+	&lt;div class="determinate" style="width: 70%">&lt;/div>
+&lt;/div>
+	            	</code>
+	            </pre>
+
+							<h5 class="margin-top-35">Indeterminate</h5>
+
+							<div class="row no-gutter">
+								<div class="div col s8 offset-s2">
+									<div class="progress">
+										<div class="indeterminate"></div>
+									</div>
+								</div>
+							</div>
+
+	            <pre>
+	            	<code class="language-markup">
+&lt;div class="progress">
+	&lt;div class="indeterminate">&lt;/div>
+&lt;/div>
+	            	</code>
+	            </pre>
+						</div>
+					</div>
+
+
+					<!-- ######## -->
+					<!-- Circular -->
+					<!-- ######## -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Circular</h4>
+
+							<p>There are 4 colors and 3 sizes of circular spinners. The spinner should be nested in a <code class="language-markup">preloader-wrapper</code> div. The default size is medium, but you can add the classes <code class="language-markup">big</code> or <code class="language-markup">small</code> to adjust the size accordingly. You can add the classes <code class="language-markup">spinner-red-only</code>, <code class="language-markup">spinner-blue-only</code>, <code class="language-markup">spinner-yellow-only</code> and <code class="language-markup">spinner-green-only</code>. You can also leave this class as just <code class="language-markup">spinner-layer</code> and it will be set to the <code class="language-css">$spinner-default-color</code> variable in our variables.scss file.</p>
+
+							<h5 class="margin-top-35">Colors</h5>
+
+							<div class="row no-gutter">
+								<div class="col s12 m4 center">
+									<div class="preloader-wrapper big active">
+										<div class="spinner-layer spinner-blue-only">
+											<div class="circle-clipper left">
+												<div class="circle"></div>
+											</div>
+											<div class="gap-patch">
+												<div class="circle"></div>
+											</div>
+											<div class="circle-clipper right">
+												<div class="circle"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col s12 m4 center">
+									<div class="preloader-wrapper big active">
+										<div class="spinner-layer spinner-red-only">
+											<div class="circle-clipper left">
+												<div class="circle"></div>
+											</div>
+											<div class="gap-patch">
+												<div class="circle"></div>
+											</div>
+											<div class="circle-clipper right">
+												<div class="circle"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col s12 m4 center">
+									<div class="preloader-wrapper big active">
+										<div class="spinner-layer spinner-green-only">
+											<div class="circle-clipper left">
+												<div class="circle"></div>
+											</div>
+											<div class="gap-patch">
+												<div class="circle"></div>
+											</div>
+											<div class="circle-clipper right">
+												<div class="circle"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+	            <pre>
+	            	<code class="language-markup">
+&lt;div class="preloader-wrapper big active">
+	&lt;div class="spinner-layer spinner-blue-only">
+		&lt;div class="circle-clipper left">
+			&lt;div class="circle">&lt;/div>
+		&lt;/div>
+		&lt;div class="gap-patch">
+			&lt;div class="circle">&lt;/div>
+		&lt;/div>
+		&lt;div class="circle-clipper right">
+			&lt;div class="circle">&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/div>
+
+&lt;div class="preloader-wrapper big active">
+	&lt;div class="spinner-layer spinner-red-only">
+		&lt;div class="circle-clipper left">
+			&lt;div class="circle">&lt;/div>
+		&lt;/div>
+		&lt;div class="gap-patch">
+			&lt;div class="circle">&lt;/div>
+		&lt;/div>
+		&lt;div class="circle-clipper right">
+			&lt;div class="circle">&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/div>
+
+&lt;div class="preloader-wrapper big active">
+	&lt;div class="spinner-layer spinner-green-only">
+		&lt;div class="circle-clipper left">
+			&lt;div class="circle">&lt;/div>
+		&lt;/div>
+		&lt;div class="gap-patch">
+			&lt;div class="circle">&lt;/div>
+		&lt;/div>
+		&lt;div class="circle-clipper right">
+			&lt;div class="circle">&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/div>
+	            	</code>
+	            </pre>
+						</div>
+					</div>
+
+
+					<!-- ######################## -->
+					<!-- Circular Flashing Colors -->
+					<!-- ######################## -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Circular Flashing Colors</h4>
+
+							<div class="row futter">
+								<div class="col s12 m4 center">
+									<div class="preloader-wrapper big active">
+										<div class="spinner-layer spinner-blue">
+											<div class="circle-clipper left">
+												<div class="circle"></div>
+											</div>
+											<div class="gap-patch">
+												<div class="circle"></div>
+											</div>
+											<div class="circle-clipper right">
+												<div class="circle"></div>
+											</div>
+										</div>
+
+										<div class="spinner-layer spinner-red">
+											<div class="circle-clipper left">
+												<div class="circle"></div>
+											</div>
+											<div class="gap-patch">
+												<div class="circle"></div>
+											</div>
+											<div class="circle-clipper right">
+												<div class="circle"></div>
+											</div>
+										</div>
+
+										<div class="spinner-layer spinner-yellow">
+											<div class="circle-clipper left">
+												<div class="circle"></div>
+											</div>
+											<div class="gap-patch">
+												<div class="circle"></div>
+											</div>
+											<div class="circle-clipper right">
+												<div class="circle"></div>
+											</div>
+										</div>
+
+										<div class="spinner-layer spinner-green">
+											<div class="circle-clipper left">
+												<div class="circle"></div>
+											</div>
+											<div class="gap-patch">
+												<div class="circle"></div>
+											</div>
+											<div class="circle-clipper right">
+												<div class="circle"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col s12 m4 center">
+									<div class="preloader-wrapper active">
+										<div class="spinner-layer spinner-blue">
+											<div class="circle-clipper left">
+												<div class="circle"></div>
+											</div>
+											<div class="gap-patch">
+												<div class="circle"></div>
+											</div>
+											<div class="circle-clipper right">
+												<div class="circle"></div>
+											</div>
+										</div>
+
+										<div class="spinner-layer spinner-red">
+											<div class="circle-clipper left">
+												<div class="circle"></div>
+											</div>
+											<div class="gap-patch">
+												<div class="circle"></div>
+											</div>
+											<div class="circle-clipper right">
+												<div class="circle"></div>
+											</div>
+										</div>
+
+										<div class="spinner-layer spinner-yellow">
+											<div class="circle-clipper left">
+												<div class="circle"></div>
+											</div>
+											<div class="gap-patch">
+												<div class="circle"></div>
+											</div>
+											<div class="circle-clipper right">
+												<div class="circle"></div>
+											</div>
+										</div>
+
+										<div class="spinner-layer spinner-green">
+											<div class="circle-clipper left">
+												<div class="circle"></div>
+											</div>
+											<div class="gap-patch">
+												<div class="circle"></div>
+											</div>
+											<div class="circle-clipper right">
+												<div class="circle"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col s12 m4 center">
+									<div class="preloader-wrapper small active">
+										<div class="spinner-layer spinner-blue">
+											<div class="circle-clipper left">
+												<div class="circle"></div>
+											</div>
+											<div class="gap-patch">
+												<div class="circle"></div>
+											</div>
+											<div class="circle-clipper right">
+												<div class="circle"></div>
+											</div>
+										</div>
+
+										<div class="spinner-layer spinner-red">
+											<div class="circle-clipper left">
+												<div class="circle"></div>
+											</div>
+											<div class="gap-patch">
+												<div class="circle"></div>
+											</div>
+											<div class="circle-clipper right">
+												<div class="circle"></div>
+											</div>
+										</div>
+
+										<div class="spinner-layer spinner-yellow">
+											<div class="circle-clipper left">
+												<div class="circle"></div>
+											</div>
+											<div class="gap-patch">
+												<div class="circle"></div>
+											</div>
+											<div class="circle-clipper right">
+												<div class="circle"></div>
+											</div>
+										</div>
+
+										<div class="spinner-layer spinner-green">
+											<div class="circle-clipper left">
+												<div class="circle"></div>
+											</div>
+											<div class="gap-patch">
+												<div class="circle"></div>
+											</div>
+											<div class="circle-clipper right">
+												<div class="circle"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+	            <pre>
+	            	<code class="language-markup">
+&lt;div class="preloader-wrapper big active">
+	&lt;div class="spinner-layer spinner-blue">
+		&lt;div class="circle-clipper left">
+			&lt;div class="circle">&lt;/div>
+		&lt;/div>
+		&lt;div class="gap-patch">
+			&lt;div class="circle">&lt;/div>
+		&lt;/div>
+		&lt;div class="circle-clipper right">
+			&lt;div class="circle">&lt;/div>
+		&lt;/div>
+	&lt;/div>
+
+	&lt;div class="spinner-layer spinner-red">
+		&lt;div class="circle-clipper left">
+			&lt;div class="circle">&lt;/div>
+		&lt;/div>
+		&lt;div class="gap-patch">
+			&lt;div class="circle">&lt;/div>
+		&lt;/div>
+		&lt;div class="circle-clipper right">
+			&lt;div class="circle">&lt;/div>
+		&lt;/div>
+	&lt;/div>
+
+	&lt;div class="spinner-layer spinner-yellow">
+		&lt;div class="circle-clipper left">
+			&lt;div class="circle">&lt;/div>
+		&lt;/div>
+		&lt;div class="gap-patch">
+			&lt;div class="circle">&lt;/div>
+		&lt;/div>
+		&lt;div class="circle-clipper right">
+			&lt;div class="circle">&lt;/div>
+		&lt;/div>
+	&lt;/div>
+
+	&lt;div class="spinner-layer spinner-green">
+		&lt;div class="circle-clipper left">
+			&lt;div class="circle">&lt;/div>
+		&lt;/div>
+		&lt;div class="gap-patch">
+			&lt;div class="circle">&lt;/div>
+		&lt;/div>
+		&lt;div class="circle-clipper right">
+			&lt;div class="circle">&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/div>
+	            	</code>
+	            </pre>
+						</div>
+					</div>
+				</section>

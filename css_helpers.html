@@ -1,0 +1,180 @@
+---
+layout: admin
+title: CSS - Helpers
+
+section: css
+module: css_helpers
+
+header:
+    icon: aspect_ratio
+    title: Helpers
+    description: Improve your productivity with helper classes and utilities
+
+stylesheets:
+    - css/pages/css_helpers.css
+---
+
+				<section id="css_helpers">
+					<!-- ######### -->
+					<!-- Alignment -->
+					<!-- ######### -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Alignment</h4>
+							<p>We have easy to use classes to help you align your content.</p>
+
+							<h5 class="margin-top-35">Vertical Align</h5>
+							<p>You can easily vertically center things by adding the class <code class="language-markup">valign-wrapper</code> to the container holding the items you want to vertically align.</p>
+							<div class="valign-demo valign-wrapper">
+								<h6 class="valign center">This should be vertically aligned</h6>
+							</div>
+							<pre>
+								<code class="language-markup">
+&lt;div class="valign-wrapper">
+	&lt;h5 class="valign">This should be vertically aligned&lt;/h5>
+&lt;/div>
+		        		</code>
+		        	</pre>
+
+							<h5 class="margin-top-40">Text Align</h5>
+							<p>These classes are for horizontally aligning content. We have <code class="language-markup">.left-align</code>, <code class="language-markup">.right-align</code> and <code class="language-markup">.center-align</code></p>
+							<div class="talign-demo">
+								<h6 class="left-align">This should be left aligned</h6>
+							</div>
+							<br>
+							<div class="talign-demo">
+								<h6 class="right-align">This should be right aligned</h6>
+							</div>
+							<br>
+							<div class="talign-demo">
+								<h6 class="center-align">This should be center aligned</h6>
+							</div>
+							<pre>
+								<code class="language-markup">
+&lt;div>
+	&lt;h6 class="left-align">This should be left aligned&lt;/h6>
+&lt;/div>
+&lt;div>
+	&lt;h6 class="right-align">This should be right aligned&lt;/h6>
+&lt;/div>
+&lt;div>
+	&lt;h6 class="center-align">This should be center aligned&lt;/h6>
+&lt;/div>
+		        		</code>
+		        	</pre>
+
+							<h5 class="margin-top-40">Quick Floats</h5>
+							<p>Quickly float things by adding the class <code class="language-markup">left</code> or <code class="language-markup">right</code> to the element. <code class="language-markup">!important</code> is used to avoid specificity issues.</p>
+							<pre>
+								<code class="language-markup">
+&lt;div class="left">...&lt;/div>
+&lt;div class="right">...&lt;/div>
+		        		</code>
+		        	</pre>
+						</div>
+					</div>
+
+
+					<!-- ############## -->
+					<!-- Hiding Content -->
+					<!-- ############## -->
+					<div id="hiding-content-wrapper" class="row margin-top-25">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Hiding Content</h4>
+							<p>We provide easy to use classes to hide content on specific screen sizes.</p>
+
+							<table class="striped">
+								<thead>
+									<tr>
+										<th></th>
+										<th>Screen Range</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><code class="language-markup"><strong>.hide</strong></code></td>
+										<td>Hidden for all Devices</td>
+									</tr>
+									<tr>
+										<td><code class="language-markup"><strong>.hide-on-small-only</strong></code></td>
+										<td>Hidden for Mobile Only</td>
+									</tr>
+									<tr>
+										<td><code class="language-markup"><strong>.hide-on-med-only</strong></code></td>
+										<td>Hidden for Tablet Only</td>
+									</tr>
+									<tr>
+										<td><code class="language-markup"><strong>.hide-on-med-and-down</strong></code></td>
+										<td>Hidden for Tablet and Below</td>
+									</tr>
+									<tr>
+										<td><code class="language-markup"><strong>.hide-on-med-and-up</strong></code></td>
+										<td>Hidden for Tablet and Above</td>
+									</tr>
+									<tr>
+										<td><code class="language-markup"><strong>.hide-on-large-only</strong></code></td>
+										<td>Hidden for Desktop Only</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<h5 class="margin-top-25">Usage</h5>
+		        	<pre>
+		        		<code class="language-markup">
+&lt;div class="hide-on-small-only">&lt;/div>
+		        		</code>
+		        	</pre>
+						</div>
+					</div>
+
+
+					<!-- ########## -->
+					<!-- Formatting -->
+					<!-- ########## -->
+					<div class="row margin-top-25">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Formatting</h4>
+							<p>These classes help format various content on your site.</p>
+
+							<h5 class="margin-top-40">Truncation</h5>
+							<p>To truncate long lines of text in an ellipsis, add the class <code class="language-markup">truncate</code> to the tag which contains the text. See an example below of a header being truncated inside a card.</p>
+
+							<div id="truncate-demo-wrapper" class="row no-gutter">
+								<div class="col s4">
+									<div class="card-panel">
+										<h6 class="truncate">This is an extremely long title that will be truncated, so, it has to be a really long long title</h6>
+									</div>
+								</div>
+							</div>
+
+							<pre>
+								<code class="language-markup">
+&lt;h6 class="truncate">This is an extremely long title that will be truncated&lt;/h6>
+		        		</code>
+		        	</pre>
+
+							<h5 class="margin-top-40">Hover</h5>
+							<p>The <code class="language-markup">hoverable</code> is a hover class that adds an animation for box shadow as seen below. It can be used on most elements, but meant for use on cards.</p>
+
+							<div id="hoverable-demo-wrapper" class="row no-gutter">
+								<div class="col s8 m6">
+									<div class="card hoverable small">
+										<div class="card-image">
+											<img src="img/sample-1.jpg">
+											<span class="card-title">Card Title</span>
+										</div>
+										<div class="card-content">
+											<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<pre>
+								<code class="language-markup">
+&lt;div class="card-panel hoverable">Hoverable Card Panel&lt;/div>
+		        		</code>
+		        	</pre>
+						</div>
+					</div>
+				</section>

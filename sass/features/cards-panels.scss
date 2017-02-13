@@ -1,0 +1,147 @@
+@import "../imports/colors";
+
+/*
+ * Cards
+ */
+ .card {
+    .card-title {
+        color: #898989;
+
+        i {
+            font-size: 1.3rem;
+            color: #898989;
+        }
+    }
+
+    @each $color_name, $color_types in $colors {
+        &.#{$color_name} {
+            .card-title {
+                color: #FFF !important;
+
+                i {
+                    color: #FFF !important;
+                }
+            }
+        }
+    }
+
+    &.main, &.alternative {
+        .card-title {
+            color: #FFF !important;
+
+            i {
+                color: #FFF !important;
+            }
+        }
+    }
+
+
+    .card-image {
+        .card-title {
+            color: #FFF !important;
+        }
+    }
+}
+
+
+/*
+ * Panels
+ */
+ .panel {
+    background: #FFF;
+    border: 1px solid #F0F0F0;
+
+    .panel-header {
+        padding: 15px;
+
+        .title {
+            font-size: 1.4rem;
+            color: #898989;
+        }
+        .subtitle {
+            font-size: 0.9rem;
+            color: #9e9e9e;
+        }
+
+        .row:last-child {
+            margin-bottom: 0px;
+        }
+        
+        form {
+            .input-field:first-child {
+                margin-top: 0px;
+            }
+
+            .input-field:last-child {
+                input {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+
+    .panel-body {
+        padding: 20px 35px;
+    }
+
+    .panel-footer {
+        padding: 15px;
+    }
+
+    &.panel-bordered {
+        .panel-header {
+            border-bottom: 1px solid #F0F0F0;
+
+            &:not(:first-of-type) {
+                border-top: 1px solid #F0F0F0;
+            }
+        }
+        .panel-footer {
+            border-top: 1px solid #F0F0F0;
+        }
+
+        .panel-header, .panel-footer {
+            background-color: #FCFCFC;
+        }
+    }
+}
+
+
+/*
+ * Cards and panels colors
+ */
+ .card, .panel, .card-panel {
+    color: #737373;
+
+    h1, h2, h3, h4, h5, h6 {
+        color: #545454;
+    }
+
+    @each $color_name, $color_types in $colors {
+        &.#{$color_name} {
+            color: #FFF !important;
+
+            .title,
+            .subtitle {
+                color: #FFF !important;
+            }
+
+            h1, h2, h3, h4, h5, h6 {
+                color: rgba(255,255,255,0.95) !important;
+            }
+        }
+    }
+
+    &.main, &.alternative {
+        color: #FFF !important;
+
+        .title,
+        .subtitle {
+            color: #FFF !important;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: rgba(255,255,255,0.95) !important;
+        }
+    }
+}

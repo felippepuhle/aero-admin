@@ -1,0 +1,95 @@
+.browser-app {
+	text-align: left;
+	width: 100%;
+	max-width: 1000px;
+	height: auto;
+	border-radius: 5px 5px 2px 2px;
+	margin: 20px 0px 0px;
+	overflow: hidden;
+
+	.row {
+		margin: 0;
+	}
+
+	.top-bar {
+		height: 30px;
+		border-radius: 5px 5px 0 0;
+		border-top: thin solid #eaeae9;
+		border-bottom: thin solid #dfdfde;
+		background: linear-gradient(#e7e7e6, #E2E2E1);
+
+		.circles {
+			margin: 5px 12px;
+
+			.circle {
+				height: 10px;
+				width: 10px;
+				display: inline-block;
+				border-radius: 50%;
+				background-color: #fff;
+				margin-right: 1px;
+
+				&#close-circle {
+					background-color: #FF5C5A;
+				}
+				&#minimize-circle {
+					background-color: #FFBB50;
+				}
+				&#maximize-circle {
+					background-color: #1BC656;
+				}
+			}
+		}
+	}
+
+	.content {
+		margin: 0;
+		width: 100%;
+		display: inline-block;
+		border-radius: 0 0 5px 5px;
+		background-color: #fafafa;
+
+		.top {
+			height: 42px;
+
+			&:not(.main):not(.alternative) {
+				background-color: #80919a;
+			}
+		}
+
+		.left {
+			height: 300px;
+
+			&:not(.main):not(.alternative) {
+				background-color: #90a4ae;
+			}
+		}
+
+		.right {
+			height: 300px;
+
+			&:not(.main):not(.alternative) {
+				background-color: #8898a0;
+			}
+		}
+
+		.flat-header {
+			height: 35px;
+			width: 80%;
+			background-color: rgba(255,255,255,0.15);
+			display: block;
+			margin: 27px auto;
+		}
+		.flat-text {
+			height: 25px;
+			width: 95%;
+			background-color: rgba(0,0,0,0.15);
+			display: block;
+			margin: 27px auto;
+
+			&.flat-text.small {
+				width: 50%;
+			}
+		}
+	}
+}

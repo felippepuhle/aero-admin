@@ -1,0 +1,137 @@
+#profile {
+	.panel {
+		margin-bottom: 25px;
+
+		.btn-flat {
+			&:hover {
+				color: #545454;
+			}
+		}
+	}
+
+	.panel.panel-about {
+		.panel-body {
+			text-align: center;
+
+			img {
+				max-width: 90px;
+				max-height: 90px;
+				margin-bottom: 10px;
+			}
+
+			.name {
+				font-size: 1.25rem;
+				color: rgba(0,0,0,0.87);
+			}
+			.location {
+				margin-top: 2px;
+				font-size: 0.9rem;
+				color: rgba(0,0,0,0.87);
+			}
+		}
+	}
+
+	.panel.panel-gallery {
+		.row {
+			margin-bottom: 0px;
+		}
+
+		.panel-body {
+			padding: 25px;
+		}
+	}
+
+	.panel form {
+		.panel-body {
+			padding: 0px;
+
+			textarea {
+				padding: 1.6rem;
+			    box-sizing: inherit;
+			    margin: 0px -1px -7px;
+			    min-height: 4rem;
+			    height: 4.55rem !important;
+
+			    &:not(:focus) {
+    				border-bottom: 1px solid transparent;
+			    }
+			}
+
+			input {
+				margin: 0px -1px -1px;
+    			padding: 0px 1.05rem;
+    			box-sizing: border-box;
+
+			    &:not(:focus) {
+    				border-bottom: 1px solid transparent;
+			    }
+			}
+		}
+	}
+
+	.panel.post {
+		.panel-body {
+			padding: 0px;
+
+			.who {
+				padding: 20px 25px 10px;
+				min-height: 80px;
+
+				img {
+					max-width: 50px;
+					max-height: 50px;
+					margin-right: 15px;
+					float: left;
+				}
+
+				.name {
+					padding-top: 4px;
+					font-size: 1.05rem;
+					color: rgba(0,0,0,0.87);
+				}
+				.time {
+					margin-top: -1px;
+					font-size: 0.9rem;
+					color: rgba(0,0,0,0.47);
+				}
+			}
+
+			.text {
+				padding: 10px 25px 20px;
+			}
+
+			.gallery {
+				padding: 0px 25px;
+			}
+
+			.likes {
+    			border-top: 1px solid #F0F0F0;
+    			border-bottom: 1px solid #F0F0F0;
+				background-color: #FCFCFC;
+				padding: 10px;
+
+				.btn-flat {
+					margin-right: 5px;
+
+					i {
+						font-size: 1.15rem;
+						margin-right: 5px;
+					}
+				}
+
+				.others {
+					font-size: 0.9rem;
+					color: rgba(0,0,0,0.63);
+				}
+			}
+
+			.comment {
+				textarea {
+					padding: 1rem 1.2rem;
+					min-height: 1rem;
+					height: 3.5rem !important;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,297 @@
+---
+layout: admin
+title: Components - Buttons
+
+section: components
+module: components_buttons
+
+header:
+    icon: gamepad
+    title: Buttons
+    description: There are 3 main button types described in material design. The raised button is a standard button that signify actions and seek to give depth to a mostly flat page. The floating circular action button is meant for very important functions. Flat buttons are usually used within elements that already have depth like cards or modals.
+---
+
+				<section id="components_buttons">
+					<!-- ###### -->
+					<!-- Raised -->
+					<!-- ###### -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Raised</h4>
+
+							<a class="waves-effect waves-light btn">button</a>
+		          <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>button</a>
+  		        <a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>button</a>
+
+	            <pre>
+	            	<code class="language-markup">
+&lt;a class="waves-effect waves-light btn">Stuff&lt;/a>
+&lt;a class="waves-effect waves-light btn">&lt;i class="material-icons left">cloud&lt;/i>button&lt;/a>
+&lt;a class="waves-effect waves-light btn">&lt;i class="material-icons right">cloud&lt;/i>button&lt;/a>
+	            	</code>
+	            </pre>
+						</div>
+					</div>
+
+
+					<!-- ######## -->
+					<!-- Floating -->
+					<!-- ######## -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Floating</h4>
+
+							<a class="btn-floating waves-effect waves-light btn-large"><i class="material-icons">add</i></a>
+
+	            <pre>
+	            	<code class="language-markup">
+&lt;a class="btn-floating btn-large waves-effect waves-light">&lt;i class="material-icons">add</i>&lt;/i>&lt;/a>
+	            	</code>
+	            </pre>
+						</div>
+
+						<div class="col s12 margin-top-25">
+							<h5>Fixed Action Button</h5>
+
+							<p>If you want a fixed floating action button, you can add multiple actions that will appear on hover. Our demo is in the bottom righthand corner of the page.</p>
+
+							<div class="fixed-action-btn" style="bottom: 20px; right: 20px;">
+								<a class="btn-floating btn-large">
+									<i class="material-icons">mode_edit</i>
+								</a>
+								<ul>
+									<li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+									<li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+									<li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+									<li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+								</ul>
+							</div>
+
+	            <pre>
+	            	<code class="language-markup">
+&lt;div class="fixed-action-btn" style="bottom: 20px; right: 20px;">
+	&lt;a class="btn-floating btn-large">
+		&lt;i class="large material-icons">mode_edit&lt;/i>
+	&lt;/a>
+	&lt;ul>
+		&lt;li>&lt;a class="btn-floating red">&lt;i class="material-icons">insert_chart&lt;/i>&lt;/a>&lt;/li>
+		&lt;li>&lt;a class="btn-floating yellow darken-1">&lt;i class="material-icons">format_quote&lt;/i>&lt;/a>&lt;/li>
+		&lt;li>&lt;a class="btn-floating green">&lt;i class="material-icons">publish&lt;/i>&lt;/a>&lt;/li>
+		&lt;li>&lt;a class="btn-floating blue">&lt;i class="material-icons">attach_file&lt;/i>&lt;/a>&lt;/li>
+	&lt;/ul>
+&lt;/div>
+	            	</code>
+	            </pre>
+
+	            <p>You can also open and close the Fixed Action Button Menu programatically.</p>
+
+	            <pre>
+		            <code class="language-javascript">
+$('.fixed-action-btn').openFAB();
+$('.fixed-action-btn').closeFAB();
+$('.fixed-action-btn.toolbar').openToolbar();
+$('.fixed-action-btn.toolbar').closeToolbar();
+		            </code>
+	            </pre>
+						</div>
+
+						<div class="col s12 margin-top-25">
+							<h5>Horizontal FAB</h5>
+
+							<p>Creating a horizontal FAB is easy! Just add the class <code class="language-markup">horizontal</code> to the FAB.</p>
+
+							<div style="position: relative;">
+								<div class="fixed-action-btn horizontal" style="position: absolute; display: inline-block; bottom: 10px; right: 10px;">
+									<a class="btn-floating btn-large">
+										<i class="large material-icons">mode_edit</i>
+									</a>
+									<ul>
+										<li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+										<li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+										<li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+										<li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+									</ul>
+								</div>
+							</div>
+
+			        <pre>
+			        	<code class="language-markup col s12">
+&lt;div class="fixed-action-btn horizontal" style="bottom: 10px; right: 10px;">
+	&lt;a class="btn-floating btn-large">
+		&lt;i class="large material-icons">mode_edit&lt;/i>
+	&lt;/a>
+	&lt;ul>
+		&lt;li>&lt;a class="btn-floating red">&lt;i class="material-icons">insert_chart&lt;/i>&lt;/a>&lt;/li>
+		&lt;li>&lt;a class="btn-floating yellow darken-1">&lt;i class="material-icons">format_quote&lt;/i>&lt;/a>&lt;/li>
+		&lt;li>&lt;a class="btn-floating green">&lt;i class="material-icons">publish&lt;/i>&lt;/a>&lt;/li>
+		&lt;li>&lt;a class="btn-floating blue">&lt;i class="material-icons">attach_file&lt;/i>&lt;/a>&lt;/li>
+	&lt;/ul>
+&lt;/div>
+			        	</code>
+			        </pre>
+						</div>
+
+						<div class="col s12 margin-top-25">
+			        <h5>Click-only FAB</h5>
+
+			        <p>If you want to disable the hover behaviour, and instead toggle the FAB menu when the user clicks on the large button (works great on mobile!), just add the <code class="language-markup">click-to-toggle</code> class to the FAB.</p>
+
+			        <div style="position: relative; height: 70px;">
+			        	<div class="fixed-action-btn horizontal click-to-toggle" style="position: absolute; right: 10px;">
+			        		<a class="btn-floating btn-large">
+			        			<i class="material-icons">mode_edit</i>
+			        		</a>
+			        		<ul>
+			        			<li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+			        			<li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+			        			<li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+			        			<li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+			        		</ul>
+			        	</div>
+			        </div>
+
+			        <pre>
+			        	<code class="language-markup col s12">
+&lt;div class="fixed-action-btn horizontal click-to-toggle" style="bottom: 10px; right: 10px;">
+	&lt;a class="btn-floating btn-large">
+		&lt;i class="large mdi-navigation-menu">&lt;/i>
+	&lt;/a>
+	&lt;ul>
+		&lt;li>&lt;a class="btn-floating red">&lt;i class="material-icons">insert_chart&lt;/i>&lt;/a>&lt;/li>
+		&lt;li>&lt;a class="btn-floating yellow darken-1">&lt;i class="material-icons">format_quote&lt;/i>&lt;/a>&lt;/li>
+		&lt;li>&lt;a class="btn-floating green">&lt;i class="material-icons">publish&lt;/i>&lt;/a>&lt;/li>
+		&lt;li>&lt;a class="btn-floating blue">&lt;i class="material-icons">attach_file&lt;/i>&lt;/a>&lt;/li>
+	&lt;/ul>
+&lt;/div>
+			        	</code>
+			        </pre>
+						</div>
+
+						<div class="col s12 margin-top-25">
+			        <h5>FAB to Toolbar</h5>
+
+              <p>Instead of displaying individual button options, you can transition your FAB into a toolbar on click. Just add the <code class="language-markup">toolbar</code> class to the FAB.</p>
+
+			        <div style="position: relative; height: 70px;">
+                <div class="fixed-action-btn toolbar" style="position: absolute; right: 10px;">
+                  <a class="btn-floating btn-large">
+                    <i class="large material-icons">mode_edit</i>
+                  </a>
+                  <ul>
+                    <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">insert_chart</i></a></li>
+                    <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">format_quote</i></a></li>
+                    <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">publish</i></a></li>
+                    <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">attach_file</i></a></li>
+                  </ul>
+                </div>
+			        </div>
+
+			        <pre>
+			        	<code class="language-markup col s12">
+&lt;div class="fixed-action-btn toolbar">
+  &lt;a class="btn-floating btn-large">
+    &lt;i class="large material-icons">mode_edit&lt;/i>
+  &lt;/a>
+  &lt;ul>
+    &lt;li class="waves-effect waves-light">&lt;a href="#!">&lt;i class="material-icons">insert_chart&lt;/i>&lt;/a>&lt;/li>
+    &lt;li class="waves-effect waves-light">&lt;a href="#!">&lt;i class="material-icons">format_quote&lt;/i>&lt;/a>&lt;/li>
+    &lt;li class="waves-effect waves-light">&lt;a href="#!">&lt;i class="material-icons">publish&lt;/i>&lt;/a>&lt;/li>
+    &lt;li class="waves-effect waves-light">&lt;a href="#!">&lt;i class="material-icons">attach_file&lt;/i>&lt;/a>&lt;/li>
+  &lt;/ul>
+&lt;/div>
+			        	</code>
+			        </pre>
+						</div>
+					</div>
+
+
+					<!-- #### -->
+					<!-- Flat -->
+					<!-- #### -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Flat</h4>
+
+							<p>Flat buttons are used to reduce excessive layering. For example, flat buttons are usually used for actions within a card or modal so there aren't too many overlapping shadows.</p>
+
+		        	<a class="waves-effect waves-alternative btn-flat">Button</a>
+
+	            <pre>
+	            	<code class="language-markup">
+&lt;a class="waves-effect waves-alternative btn-flat">Button&lt;/a>
+	            	</code>
+	            </pre>
+						</div>
+					</div>
+
+
+					<!-- ############# -->
+					<!-- Submit Button -->
+					<!-- ############# -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Submit Button</h4>
+
+							<p>When you use a button to submit a form, instead of using a input tag, use a button tag with a type submit</p>
+
+		        	<button class="btn waves-effect waves-light" type="submit" name="action">Submit<i class="material-icons right">send</i></button>
+
+	            <pre>
+	            	<code class="language-markup">
+&lt;button class="btn waves-effect waves-light" type="submit" name="action">
+	Submit
+	&lt;i class="material-icons right">send</i>&lt;/i>
+&lt;/button>
+	            	</code>
+	            </pre>
+						</div>
+					</div>
+
+
+					<!-- ##### -->
+					<!-- Large -->
+					<!-- ##### -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Large</h4>
+
+							<a class="waves-effect waves-light btn-large">Button</a>
+			        <a class="waves-effect waves-light btn-large"><i class="material-icons left">cloud</i>button</a>
+			        <a class="waves-effect waves-light btn-large"><i class="material-icons right">cloud</i>button</a>
+
+	            <pre>
+	            	<code class="language-markup">
+&lt;a class="waves-effect waves-light btn-large">Button&lt;/a>
+&lt;a class="waves-effect waves-light btn-large">&lt;i class="material-icons left">cloud&lt;/i>button&lt;/a>
+&lt;a class="waves-effect waves-light btn-large">&lt;i class="material-icons right">cloud&lt;/i>button&lt;/a>
+	            	</code>
+	            </pre>
+						</div>
+					</div>
+
+
+					<!-- ######## -->
+					<!-- Disabled -->
+					<!-- ######## -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Disabled</h4>
+
+							<p>This style can be applied to all button types</p>
+
+			        <a class="btn-large disabled">Button</a>
+			        <a class="btn disabled">Button</a>
+			        <a class="btn-flat disabled">Button</a>
+			        <a class="btn-floating disabled"><i class="material-icons">add</i></a>
+
+	            <pre>
+	            	<code class="language-markup">
+&lt;a class="btn-large disabled">Button&lt;/a>
+&lt;a class="btn disabled">Button&lt;/a>
+&lt;a class="btn-flat disabled">Button&lt;/a>
+&lt;a class="btn-floating disabled">&lt;i class="material-icons">add&lt;/i>&lt;/a>
+	            	</code>
+	            </pre>
+						</div>
+					</div>
+				</section>

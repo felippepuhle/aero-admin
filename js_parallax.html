@@ -1,0 +1,83 @@
+---
+layout: admin
+title: Javascript - Parallax
+
+section: js
+module: js_parallax
+
+header:
+    icon: flip_to_front
+    title: Parallax
+    description: Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.
+---
+
+				<section id="js_parallax">
+					<!-- ############ -->
+					<!-- Introduction -->
+					<!-- ############ -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Introduction</h4>
+
+							<p>Check out the demo to get a better idea of it.</p>
+
+				      <a href="http://materializecss.com/parallax-demo.html" target="_blank" class="btn-large waves-effect waves-light">Open Demo</a>
+						</div>
+					</div>
+
+
+					<!-- ####################### -->
+					<!-- Parallax HTML Structure -->
+					<!-- ####################### -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Parallax HTML Structure</h4>
+
+	            <pre>
+	            	<code class="language-markup">
+&lt;div class="parallax-container">
+	&lt;div class="parallax">&lt;img src="img/parallax1.jpg">&lt;/div>
+&lt;/div>
+	            	</code>
+	            </pre>
+						</div>
+					</div>
+
+
+					<!-- ############## -->
+					<!-- Initialization -->
+					<!-- ############## -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Initialization</h4>
+
+	            <pre>
+	            	<code class="language-javascript">
+$(document).ready(function(){
+	$('.parallax').parallax();
+});
+	            	</code>
+	            </pre>
+						</div>
+					</div>
+
+
+					<!-- ###################### -->
+					<!-- Parallax Customization -->
+					<!-- ###################### -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Parallax Customization</h4>
+
+							<p>The parallax container height is what defines how much of the image can be seen. This is set to a default of 500px. You can add your own style to override this.</p>
+
+	            <pre>
+	            	<code class="language-css">
+.parallax-container {
+	height: "your height here";
+}
+	            	</code>
+	            </pre>
+						</div>
+					</div>
+				</section>

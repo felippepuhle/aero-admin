@@ -1,0 +1,688 @@
+/*
+ * Util
+ */
+@mixin transition($duration: 0.3s, $easing:linear) {
+	-webkit-transition: $duration $easing;
+	-moz-transition: $duration $easing;
+	-ms-transition: $duration $easing;
+	-o-transition: $duration $easing;
+	transition: $duration $easing;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+
+/*
+ * Inputs
+ */
+@mixin materialInputs($color) {
+	input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+	 	border-bottom: 1px solid $color;
+	 	box-shadow: 0 1px 0 0 $color;
+	}
+
+	input:not([type]):focus:not([readonly]) + label, input[type=text]:focus:not([readonly]) + label, input[type=password]:focus:not([readonly]) + label, input[type=email]:focus:not([readonly]) + label, input[type=url]:focus:not([readonly]) + label, input[type=time]:focus:not([readonly]) + label, input[type=date]:focus:not([readonly]) + label, input[type=datetime-local]:focus:not([readonly]) + label, input[type=tel]:focus:not([readonly]) + label, input[type=number]:focus:not([readonly]) + label, input[type=search]:focus:not([readonly]) + label, textarea.materialize-textarea:focus:not([readonly]) + label {
+	 	color: $color;
+	}
+
+	.chips.focus {
+		border-bottom: 1px solid $color;
+	 	box-shadow: 0 1px 0 0 $color;
+	}
+}
+
+
+/*
+ * Inputs with icon prefix
+ */
+@mixin materialInputsWithIconPrefix($color) {
+	.input-field .prefix.active {
+    	color: $color;
+	}
+}
+
+
+/*
+ * Checkboxes
+ */
+@mixin materialCheckboxes($color) {
+	[type="checkbox"]:checked+label:before {
+	 	border-right-color: $color;
+	 	border-bottom-color: $color;
+	}
+	[type="checkbox"]:indeterminate+label:before {
+	 	border-right: $color;
+	}
+	[type="checkbox"].filled-in:checked+label:after {
+	 	border-color: $color;
+	 	background-color: $color;
+	}
+}
+
+
+/*
+ * Radio
+ */
+@mixin materialRadios($color) {
+	[type="radio"]:checked + label:after {
+	 	border-color: $color;
+		background-color: $color;
+	}
+	[type="radio"].with-gap:checked + label:before {
+		border-color: $color;
+	}
+	[type="radio"].with-gap:checked + label:after {
+		border-color: $color;
+		background-color: $color;
+	}
+}
+
+
+/*
+ * Switches
+ */
+@mixin materialSwitches($color, $colorLighten) {
+	.switch label input[type=checkbox]:checked + .lever {
+    	background-color: $colorLighten;
+	}
+	.switch label input[type=checkbox]:checked + .lever:after {
+    	background-color: $color;
+    }
+    input[type=checkbox]:checked:not(:disabled) ~ .lever:active:after {
+		box-shadow: 0 1px 3px 1px rgba(0,0,0,.4), 0 0 0 15px transparentize($color, .9);
+	}
+}
+
+
+/*
+ * Ranges
+ */
+ @mixin materialHTML5Range($color) {
+ 	input[type=range] + .thumb {
+ 		background-color: $color;
+ 	}
+
+ 	input[type=range]::-webkit-slider-thumb {
+ 		background-color: $color;
+ 	}
+ 	input[type=range]::-moz-range-thumb {
+ 		background-color: $color;
+ 	}
+ 	input[type=range]::-ms-thumb {
+ 		background-color: $color;
+ 	}
+ }
+@mixin materialNoUIRange($color) {
+	.noUi-connect {
+		background-color: $color !important;
+	}
+
+	.noUi-horizontal .noUi-handle {
+		background-color: $color !important;
+	}
+
+	.noUi-target .range-label {
+		background-color: $color !important;
+	}
+}
+
+
+/*
+ * Buttons
+ */
+ @mixin materialButtons($color) {
+ 	.btn,
+ 	.btn-large,
+ 	.btn-floating {
+ 		background-color: $color;
+
+ 		&:hover {
+ 			background-color: lighten($color, 5%);
+ 		}
+
+ 		&:focus {
+ 			background-color: lighten($color, 4%);
+ 		}
+ 	}
+
+	.btn:not(.white):not(:disabled),
+	.btn-large:not(:white):not(:disabled) {
+		color: #FFF !important;
+
+		i {
+			color: #FFF !important;
+		}
+
+		&:hover {
+			color: #FFF !important;
+
+			i {
+				color: #FFF !important;
+			}
+		}
+	}
+
+	.btn.white:not(:disabled),
+	.btn-large.white:not(:disabled) {
+		color: $color !important;
+
+		i {
+			color: $color !important;
+		}
+
+		&:hover {
+			color: $color !important;
+
+			i {
+				color: $color !important;
+			}
+		}
+	}
+ }
+
+
+/*
+ * Dropdowns
+ */
+ @mixin materialDropdowns($color) {
+	.dropdown-content li {
+		> a,
+		> span {
+			color: $color;
+		}
+	}
+ }
+
+
+/*
+ * Collections
+ */
+ @mixin materialCollections($color) {
+	.collection {
+		a.collection-item {
+	    	color: $color !important;
+
+	    	&.active {
+	    		background: $color;
+	    		color: lighten($color, 50%) !important;
+	    	}
+		}
+
+		.secondary-content {
+			color: $color !important;
+		}
+	}
+ }
+
+
+/*
+ * Badges
+ */
+ @mixin materialBadges($color) {
+	span.badge {
+		&.new {
+	    	background-color: $color;
+		}
+	}
+ }
+
+
+/*
+ * Pagination
+ */
+ @mixin materialPagination($color) {
+ 	.pagination {
+ 		li.active {
+ 			background-color: $color;
+
+ 			a {
+ 				color: lighten($color, 50%) !important;
+ 			}
+ 		}
+ 	}
+ }
+
+
+/*
+ * Preloader
+ */
+ @mixin materialPreloader($color) {
+ 	.progress {
+ 		background-color: lighten($color, 33%);
+
+ 		.determinate,
+ 		.indeterminate {
+ 			background-color: $color;
+ 		}
+ 	}
+
+ 	.preloader-wrapper {
+ 		.spinner-layer:not([class*="spinner-blue"]):not([class*="spinner-red"]):not([class*="spinner-yellow"]):not([class*="spinner-green"]) {
+ 			border-color: $color;
+ 		}
+ 	}
+ }
+
+
+/*
+ * Slider
+ */
+ @mixin materialSlider($color) {
+ 	.slider {
+ 		.indicators .indicator-item.active {
+    		background-color: $color;
+		}
+ 	}
+ }
+
+
+/*
+ * Table of contents (PushPin, ScrollSpy)
+ */
+ @mixin materialTableOfContents($color) {
+ 	.table-of-contents {
+ 		a:hover, a.active {
+ 			border-left-color: $color;
+ 		}
+ 	}
+ }
+
+
+/*
+ * Tabs
+ */
+ @mixin materialTabs($color) {
+ 	.tabs {
+ 		.tab {
+ 			a {
+ 				color: $color;
+
+ 				&:hover {
+ 					color: lighten($color, 20%);
+ 				}
+ 			}
+
+ 			&.disabled {
+ 				a {
+ 					color: lighten($color, 20%);
+ 				}
+ 			}
+ 		}
+
+ 		.indicator {
+ 			background-color: $color;
+ 		}
+ 	}
+ }
+
+
+/*
+ * Datepicker
+ */
+ @mixin materialDatepicker($color) {
+ 	.picker__date-display {
+ 		background-color: $color;
+ 	}
+
+ 	.picker__nav--prev:hover,
+ 	.picker__nav--next:hover {
+ 		background: desaturate(lighten($color, 35%), 15%);
+ 	}
+
+ 	.picker__weekday-display {
+ 		background-color: darken($color, 7%);
+ 	}
+
+ 	.picker__day.picker__day--today {
+ 		color: $color;
+ 	}
+
+ 	.picker__day--selected,
+ 	.picker__day--selected:hover,
+ 	.picker--focused .picker__day--selected {
+ 		background-color: $color;
+
+ 		&.picker__day--outfocus {
+ 			background-color: desaturate(lighten($color, 35%), 15%);
+ 		}
+ 	}
+
+ 	.picker__close,
+ 	.picker__today {
+ 		color: $color;
+ 	}
+
+ 	button.picker__today:focus,
+ 	button.picker__clear:focus,
+ 	button.picker__close:focus {
+ 		background-color: desaturate(lighten($color, 35%), 15%);
+ 	}
+ }
+
+
+/*
+ * Fixed action buttons
+ */
+@mixin materialFAB($color) {
+	.fixed-action-btn {
+		&.toolbar ul li a {
+			@include transition(0.2s);
+
+			color: #FFF !important;
+
+			&:hover {
+				opacity: .85 !important;
+			}
+		}
+	}
+}
+
+
+/*
+ * Main color
+ */
+@mixin mainColor($colors) {
+	/*
+	 * Create default elements
+	 */
+	@include generateDefaultElementsForColors("main", $colors);
+
+
+	/*
+	 * Override Materialize
+	 */
+	@include materialInputs(map-get($colors, "lighten-1"));
+	@include materialInputsWithIconPrefix(map-get($colors, "lighten-1"));
+	@include materialCheckboxes(map-get($colors, "lighten-1"));
+	@include materialRadios(map-get($colors, "lighten-1"));
+	@include materialSwitches(map-get($colors, "lighten-1"), map-get($colors, "lighten-3"));
+	@include materialHTML5Range(map-get($colors, "lighten-1"));
+	@include materialNoUIRange(map-get($colors, "lighten-1"));
+	@include materialCollections(map-get($colors, "lighten-1"));
+	@include materialSlider(map-get($colors, "lighten-1"));
+	@include materialTableOfContents(map-get($colors, "lighten-1"));
+	@include materialFAB(map-get($colors, "lighten-1"));
+
+
+	/*
+	 * Menu
+	 */
+	nav .nav-wrapper > ul > li {
+	 	> a:focus:before,
+	 	> a:hover:before {
+	 		border-bottom-color: map-get($colors, "base");
+	 	}
+
+	 	&.active > a:before {
+	 		border-bottom-color: map-get($colors, "base");
+	 	}
+	}
+
+
+	/*
+	 * Breadcrumb
+	 */
+	nav {
+		.breadcrumb:last-child {
+			color: map-get($colors, "base");
+		}
+		a.breadcrumb:last-child:hover {
+			color: lighten(map-get($colors, "base"), 10%);
+		}
+	}
+
+
+	/*
+	 * Content
+	 */
+	.page-header h1 {
+		color: map-get($colors, "lighten-1");
+	}
+
+	blockquote {
+	    border-left-color: map-get($colors, "base");
+	}
+
+
+	a:not(.btn):not(.btn-large):not(.btn-flat) {
+		@include transition(0.2s);
+
+		color: map-get($colors, "lighten-2");
+
+		&:hover {
+			color: darken(map-get($colors, "lighten-2"), 5%);
+		}
+	}
+
+	.main, .alternative {
+		a:not(.btn):not(.btn-large):not(.btn-flat) {
+			color: lighten(map-get($colors, "base"), 43%) !important;
+
+			&:hover {
+				color: lighten(map-get($colors, "base"), 38%) !important;
+			}
+		}
+	}
+
+
+	/*
+	 * DataTables
+	 */
+	.dataTables_wrapper {
+		.dataTables_length  {
+			@include materialDropdowns(map-get($colors, "base"));
+		}
+		.dataTables_paginate {
+			.current {
+				color: map-get($colors, "lighten-1");
+
+				&:hover {
+					color: darken(map-get($colors, "lighten-1"), 5%);
+				}
+			}
+		}
+	}
+
+
+	/*
+	 * Apps - CRUD
+	 */
+	.crud-app {
+		table {
+			tbody td {
+				.btn-flat {
+					color: map-get($colors, "lighten-1");
+
+					&:hover {
+						color: darken(map-get($colors, "lighten-1"), 5%);
+					}
+				}
+			}
+		}
+
+		form {
+			.input-fileupload {
+				.collection-item {
+					.progress {
+				 		background-color: transparent;
+
+				 		.determinate,
+				 		.indeterminate {
+				 			background-color: map-get($colors, "lighten-3");
+				 		}
+				 	}
+				}
+			}
+		}
+	}
+
+	.select2-dropdown {
+		.select2-search--dropdown {
+			.select2-search__field:focus:not([readonly]) {
+				border-bottom: 1px solid map-get($colors, "lighten-1") !important;
+			}
+		}
+	}
+
+
+	/*
+	 * Apps - Pricing Table
+	 */
+	.pricing-table-app {
+		.panel {
+			&.panel-bordered {
+				border-top-color: map-get($colors, "lighten-2") !important;
+			}
+		}
+	}
+
+
+
+	/*
+	 * Footer
+	 */
+	 footer.page-footer {
+		ul > li,
+		.footer-copyright {
+			a:hover {
+				color: map-get($colors, "lighten-2") !important;
+			}
+		}
+	}
+}
+
+
+/*
+ * Alternative color
+ */
+@mixin alternativeColor($colors) {
+	/*
+	 * Create default elements
+	 */
+	@include generateDefaultElementsForColors("alternative", $colors);
+
+
+	/*
+	 * Override Materialize
+	 */
+	@include materialButtons(map-get($colors, "lighten-1"));
+	@include materialDropdowns(map-get($colors, "base"));
+	@include materialBadges(map-get($colors, "lighten-1"));
+	@include materialPagination(map-get($colors, "lighten-1"));
+	@include materialPreloader(map-get($colors, "lighten-1"));
+	@include materialTabs(map-get($colors, "lighten-1"));
+	@include materialDatepicker(map-get($colors, "lighten-1"));
+
+
+	/*
+	 * Apps - CRUD
+	 */
+	.select2-dropdown {
+		.select2-results__option,
+		.select2-results__option--highlighted[aria-selected] {
+			color: map-get($colors, "base") !important;
+		}
+	}
+}
+
+
+/*
+ * Defaults used by main and alternative
+ */
+@mixin generateDefaultElementsForColors($prefix, $colors) {
+	@each $color_type, $color_value in $colors {
+		@if $color_type == "base" {
+			/*
+			 * Backgrounds
+			 */
+			.#{$prefix} {
+				background-color: $color_value;
+			}
+			.btn.#{$prefix}:hover {
+				background-color: lighten($color_value, 5%);
+			}
+			.btn.#{$prefix}:focus {
+				background-color: lighten($color_value, 4%);
+			}
+
+
+			/*
+			 * Texts
+			 */
+			a.#{$prefix}-text {
+			 	color: $color_value;
+
+			 	&:hover {
+			 		color: darken($color_value, 7%) !important;
+			 	}
+			}
+			.#{$prefix}-text {
+			 	color: $color_value;
+			}
+
+
+    		/*
+			 * Dropdown
+			 */
+			.#{$prefix}-dropdown li {
+				> a,
+				> span {
+					color: $color_value;
+				}
+			}
+
+
+    		/*
+			 * Waves
+			 */
+			.waves-effect {
+				&.waves-#{$prefix} .waves-ripple {
+			    	background-color: rgba(lighten($color_value, 20%), 0.60);
+				}
+			}
+		}
+
+		@else {
+			/*
+			 * Backgrounds
+			 */
+			.#{$prefix}.#{$color_type} {
+				background-color: $color_value;
+			}
+			.btn.#{$prefix}.#{$color_type}:hover {
+				background-color: lighten($color_value, 5%);
+			}
+			.btn.#{$prefix}.#{$color_type}:focus {
+				background-color: lighten($color_value, 4%);
+			}
+
+
+			/*
+			 * Texts
+			 */
+			a.#{$prefix}-text.#{$color_type} {
+			 	color: $color_value;
+
+			 	&:hover {
+			 		color: darken($color_value, 7%) !important;
+			 	}
+			}
+			.#{$prefix}-text.#{$color_type} {
+			 	color: $color_value;
+			}
+
+
+    		/*
+			 * Dropdown
+			 */
+			.#{$prefix}-dropdown.#{$color_type} li > a,
+			.#{$prefix}-dropdown.#{$color_type} li > span {
+				color: $color_value;
+			}
+		}
+	}
+}

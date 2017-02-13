@@ -1,0 +1,57 @@
+/*
+ * Small
+ */
+.btn.small,
+.btn-flat.small {
+	height: 32px;
+	line-height: 32px;
+	padding: 0 1.7rem;
+	font-size: 0.95rem;
+}
+
+
+/*
+ * Very Small
+ */
+.btn.very-small,
+.btn-flat.very-small {
+	height: 32px;
+	line-height: 32px;
+	padding: 0 1rem;
+}
+
+
+/*
+ * Btn-flat inside things
+ */
+ .card, .panel, .card-panel,
+ .collapsible, .collection, .modal {
+    .btn-flat {
+        color: #343434;
+
+        &:not(.disabled):hover {
+        	color: #343434;
+        }
+    }
+}
+
+
+/*
+ * Fixed action buttons
+ */
+.fixed-action-btn {
+	.btn-floating {
+		margin: 0px 3px;
+	}
+}
+
+
+/*
+ * With icons
+ */
+.btn, .btn-large,
+.btn-flat, .btn-floating, .btn-large {
+	i {
+		vertical-align: -5px;
+	}
+}

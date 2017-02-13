@@ -1,0 +1,180 @@
+---
+layout: admin
+title: APPs - Charts
+
+section: apps
+module: apps_charts
+
+header:
+    icon: show_chart
+    title: Charts
+    description: Some charts with Google Charts and AmCharts.
+
+stylesheets:
+    - css/apps/charts.css
+
+javascripts:
+    - https://www.gstatic.com/charts/loader.js
+    - bower_components/amcharts3/amcharts/amcharts.js
+    - bower_components/amcharts3/amcharts/serial.js
+    - bower_components/amcharts3/amcharts/pie.js
+    - bower_components/amcharts3/amcharts/themes/light.js
+    - js/apps/charts.js
+---
+
+
+				<section id="apps_charts">
+					<div class="charts-app">
+						<div class="row">
+							<div class="col s12">
+								<div class="card-panel alternative lighten-1">
+									You can download and use all <b>amCharts</b> products for free. The only limitation of the free version is that a small link to this web site will be displayed in the top left corner of your charts. If you would like to use charts without this link, or you appreciate the software and would like to support its creators, <a href="https://www.amcharts.com/online-store/" target="_blank">please purchase a commercial license</a>.
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<!-- ############# -->
+							<!-- Google Charts -->
+							<!-- ############# -->
+							<div class="col s12 l6">
+								<div class="panel panel-bordered">
+									<div class="panel-header">
+										<div class="title">
+											Google Charts
+										</div>
+										<div class="subtitle">
+											<a href="https://google-developers.appspot.com/chart/interactive/docs/quick_start" target="_blank">Click here</a> to see the documentation.
+										</div>
+									</div>
+
+									<div class="panel-header border-top-0">
+										<div class="subtitle">
+											<a href="https://developers.google.com/chart/interactive/docs/gallery/columnchart" target="_blank">
+												Column Chart
+											</a>
+										</div>
+									</div>
+									<div class="panel-body">
+										<div id="gchart-column"></div>
+									</div>
+
+									<div class="panel-header">
+										<div class="subtitle">
+											<a href="https://developers.google.com/chart/interactive/docs/gallery/barchart" target="_blank">
+												Bar Chart
+											</a>
+										</div>
+									</div>
+									<div class="panel-body">
+										<div id="gchart-bar"></div>
+									</div>
+
+									<div class="panel-header">
+										<div class="subtitle">
+											<a href="https://developers.google.com/chart/interactive/docs/gallery/areachart" target="_blank">
+												Area Chart
+											</a>
+										</div>
+									</div>
+									<div class="panel-body">
+										<div id="gchart-area"></div>
+									</div>
+
+									<div class="panel-header">
+										<div class="subtitle">
+											<a href="https://developers.google.com/chart/interactive/docs/gallery/linechart" target="_blank">
+												Line Chart
+											</a>
+										</div>
+									</div>
+									<div class="panel-body">
+										<div id="gchart-line"></div>
+									</div>
+
+									<div class="panel-header">
+										<div class="subtitle">
+											<a href="https://developers.google.com/chart/interactive/docs/gallery/piechart" target="_blank">
+												Pie Chart
+											</a>
+										</div>
+									</div>
+									<div class="panel-body">
+										<div id="gchart-pie"></div>
+									</div>
+								</div>
+							</div>
+
+							<!-- ######## -->
+							<!-- AmCharts -->
+							<!-- ######## -->
+							<div class="col s12 l6">
+								<div class="panel panel-bordered panel-map z-depth-1">
+									<div class="panel-header">
+										<div class="title">
+											AmCharts
+										</div>
+										<div class="subtitle">
+											<a href="https://docs.amcharts.com/3/javascriptcharts/AmChart" target="_blank">Click here</a> to see the documentation.
+										</div>
+									</div>
+
+									<div class="panel-header border-top-0">
+										<div class="subtitle">
+											<a href="https://www.amcharts.com/demos/simple-column-chart/" target="_blank">
+												Simple Column Chart
+											</a>
+										</div>
+									</div>
+									<div class="panel-body">
+										<div id="amchart-column"></div>
+									</div>
+
+									<div class="panel-header">
+										<div class="subtitle">
+											<a href="https://www.amcharts.com/demos/clustered-bar-chart/" target="_blank">
+												Clustered Bar Chart
+											</a>
+										</div>
+									</div>
+									<div class="panel-body">
+										<div id="amchart-bar"></div>
+									</div>
+
+									<div class="panel-header">
+										<div class="subtitle">
+											<a href="https://www.amcharts.com/demos/stacked-area/" target="_blank">
+												Stacked Area
+											</a>
+										</div>
+									</div>
+									<div class="panel-body">
+										<div id="amchart-area"></div>
+									</div>
+
+									<div class="panel-header">
+										<div class="subtitle">
+											<a href="https://www.amcharts.com/demos/line-different-colors-ups-downs/" target="_blank">
+												Line with different colors for ups and downs
+											</a>
+										</div>
+									</div>
+									<div class="panel-body">
+										<div id="amchart-line"></div>
+									</div>
+
+									<div class="panel-header">
+										<div class="subtitle">
+											<a href="https://www.amcharts.com/demos/simple-pie-chart/" target="_blank">
+												Simple Pie Chart
+											</a>
+										</div>
+									</div>
+									<div class="panel-body">
+										<div id="amchart-pie"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+          </div>
+        </section>

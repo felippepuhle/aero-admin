@@ -1,0 +1,35 @@
+@import "../imports/functions";
+@import "../imports/mixins";
+
+
+/*
+ * Box sizing
+ */
+*, ::after, ::before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+
+/*
+ * Outline
+ */
+* {
+	outline: none !important;
+}
+
+
+/*
+ * Buttons
+ */
+button.btn-flat:focus {
+    background-color: inherit !important;
+}
+
+
+/*
+ * Images
+ */
+img {
+    max-width: 100%;
+}

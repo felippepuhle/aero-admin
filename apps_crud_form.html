@@ -1,0 +1,154 @@
+---
+layout: admin
+title: APPs - CRUD
+
+section: apps
+module: apps_crud
+
+header: 
+    icon: pages
+    title: CRUD
+    description: A simple and practical CRUD application.
+
+stylesheets: 
+    - bower_components/blueimp-file-upload/css/jquery.fileupload.css
+    - bower_components/select2/dist/css/select2.min.css
+    - css/apps/crud.css
+
+javascripts: 
+    - bower_components/blueimp-file-upload/js/vendor/jquery.ui.widget.js
+    - bower_components/blueimp-load-image/js/load-image.all.min.js
+    - bower_components/blueimp-canvas-to-blob/js/canvas-to-blob.js
+    - bower_components/blueimp-file-upload/js/jquery.iframe-transport.js
+    - bower_components/blueimp-file-upload/js/jquery.fileupload.js
+    - bower_components/blueimp-file-upload/js/jquery.fileupload-process.js
+    - bower_components/blueimp-file-upload/js/jquery.fileupload-image.js
+    - bower_components/blueimp-file-upload/js/jquery.fileupload-audio.js
+    - bower_components/blueimp-file-upload/js/jquery.fileupload-video.js
+    - bower_components/blueimp-file-upload/js/jquery.fileupload-validate.js
+    - bower_components/blueimp-file-upload/js/jquery.fileupload-ui.js
+    - bower_components/blueimp-tmpl/js/tmpl.js
+    - bower_components/select2/dist/js/select2.min.js
+    - js/apps/crud_form.js
+---
+
+				<section id="apps_crud_form">
+					<div class="crud-app">
+						<div class="fixed-action-btn">
+							<a class="btn-floating btn-large tooltipped" data-tooltip="Go Back" data-position="top" data-delay="50" href="apps_crud.html">
+								<i class="large material-icons">undo</i>
+							</a>
+							<button class="btn-floating btn-large white tooltipped scrollToTop" data-tooltip="Scroll to top" data-position="top" data-delay="50">
+								<i class="large material-icons">keyboard_arrow_up</i>
+							</button>
+						</div>
+			
+						<form>
+							<div class="row">
+								<div class="col s12 m8">
+									<div class="panel panel-bordered">
+										<div class="panel-header">
+											<div class="title">General elements</div>
+											<div class="subtitle">Customize in your own way. See more <a href="components_forms.html">clicking here.</a></div>
+										</div>
+
+										<div class="panel-body">
+											<div class="row no-gutter">
+												<div class="input-field col s6">
+													<input placeholder="Placeholder" id="first_name" type="text" class="validate">
+													<label for="first_name">First Name</label>
+												</div>
+												<div class="input-field col s6">
+													<input id="last_name" type="text">
+													<label for="last_name">Last Name</label>
+												</div>
+											</div>
+											<div class="row no-gutter">
+												<div class="input-field col s12">
+													<input disabled value="I am not editable" id="disabled" type="text" class="validate">
+													<label for="disabled">Disabled</label>
+												</div>
+											</div>
+											<div class="row no-gutter">
+												<div class="input-field col s12">
+													<input id="password" type="password" class="validate">
+													<label for="password">Password</label>
+												</div>
+											</div>
+											<div class="row no-gutter">
+												<div class="input-field col s12">
+													<input id="email" type="email" class="validate">
+													<label for="email" data-error="wrong" data-success="right">Email</label>
+												</div>
+											</div>
+											<div class="row no-gutter">
+												<div class="input-select2 col s12">
+													<select id="state" name="state">
+														<optgroup label="Alaskan/Hawaiian Time Zone">
+															<option value="AK">Alaska</option>
+															<option value="HI">Hawaii</option>
+														</optgroup>
+														<optgroup label="Pacific Time Zone">
+															<option value="CA">California</option>
+															<option value="NV">Nevada</option>
+															<option value="OR">Oregon</option>
+															<option value="WA">Washington</option>
+														</optgroup>
+														<optgroup label="Mountain Time Zone">
+															<option value="AZ">Arizona</option>
+															<option value="CO">Colorado</option>
+															<option value="ID">Idaho</option>
+															<option value="MT">Montana</option>
+															<option value="NE">Nebraska</option>
+															<option value="NM">New Mexico</option>
+															<option value="ND">North Dakota</option>
+															<option value="UT">Utah</option>
+															<option value="WY">Wyoming</option>
+														</optgroup>
+													</select>
+													<label for="state" data-error="wrong" data-success="right">State</label>
+												</div>
+											</div>
+											<div class="row no-gutter margin-bottom-0">
+												<div class="input-fileupload col s12">
+													<div class="form-section">Uploads</div>
+													<div class="actions">
+														<span class="btn-flat small font-size-0-95 waves-effect fileinput-button">
+															<i class="material-icons">add</i>
+															<span>Add files</span>
+															<input type="file" id="files" name="files[]" multiple>
+														</span>
+													</div>
+													<div class="dropzone valign-wrapper">
+														<div class="valign center">
+															<i class="material-icons">get_app</i> or drop the files here
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel-footer">
+											<div class="right-align">
+												<button type="reset" class="btn-flat waves-effect">
+													RESET
+												</button>
+												<button type="submit" class="btn-flat waves-effect">
+													SUBMIT
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col s12 m4">
+									<div class="helper">
+										<h5>Input fields</h5>
+										<p>Text fields allow user input. The border should light up simply and clearly indicating which field the user is currently editing. You must have a <code class="language-markup">.input-field</code> div wrapping your input and label. This helps our jQuery animate the label. This is only used in our Input and Textarea form elements.</p>
+										<p>The validate class leverages HTML5 validation and will add a <code class="language-markup">valid</code> and <code class="language-markup">invalid</code> class accordingly. If you don't want the Green and Red validation states, just remove the <code class="language-markup">validate</code> class from your inputs.</p>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>

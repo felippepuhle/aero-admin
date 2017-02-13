@@ -1,0 +1,81 @@
+---
+layout: admin
+title: Javascript - Transitions
+
+section: js
+module: js_transitions
+
+header:
+    icon: transform
+    title: Transitions
+    description: We've made some custom animation functions that will transition your content. It's recommended to use this with our <a href="js_scrollfire.html">ScrollFire Plugin</a> to make your content transition in as you scroll.
+
+stylesheets:
+    - css/pages/js_transitions.css
+---
+
+                <section id="js_transitions">
+                	<!-- ################# -->
+                	<!-- showStaggeredList -->
+                	<!-- ################# -->
+                	<div class="row">
+                		<div class="col s12">
+                			<h4 class="main-text lighten-1">showStaggeredList</h4>
+
+                			<p>Use this to create a staggered reveal effect for any <code class="language-markup">UL</code> Tag with list items. Just make sure the list items in the <code class="language-markup">UL</code> are <code class="language-css">opacity: 0; to ensure the animation works correctly.</code></p>
+
+                    	<a href="#!" class="btn" onclick="Materialize.showStaggeredList('#staggered-test')">Click Me</a>
+
+                      <pre>
+                      	<code class="language-markup">
+&lt;a href="#!" class="btn" onclick="Materialize.showStaggeredList('#staggered-test')">Click Me&lt;/a>
+                      	</code>
+                      </pre>
+
+                      <ul class="margin-top-35" id="staggered-test">
+                      	<li>
+                      		<h5>List Item</h5>
+                      		<p>This is a description</p>
+                      	</li>
+                      	<li>
+                      		<h5>List Item</h5>
+                      		<p>This is a description</p>
+                      	</li>
+                      	<li>
+                      		<h5>List Item</h5>
+                      		<p>This is a description</p>
+                      	</li>
+                      	<li>
+                      		<h5>List Item</h5>
+                      		<p>This is a description</p>
+                      	</li>
+                      	<li>
+                      		<h5>List Item</h5>
+                      		<p>This is a description</p>
+                      	</li>
+                      </ul>
+                		</div>
+                	</div>
+
+
+                	<!-- ########### -->
+                	<!-- fadeInImage -->
+                	<!-- ########### -->
+                	<div class="row">
+                		<div class="col s12">
+                			<h4 class="main-text lighten-1">fadeInImage</h4>
+
+                			<p>Use this to fade in images. It also animates grayscale and brightness to give it a unique effect.</p>
+
+                    	<a href="#!" class="btn" onclick="Materialize.fadeInImage('#image-test')">Click Me</a>
+
+                      <pre>
+                      	<code class="language-markup">
+&lt;a href="#!" class="btn" onclick="Materialize.fadeInImage('#image-test')">Click Me&lt;/a>
+                      	</code>
+                      </pre>
+
+                      <img class="margin-top-35" id="image-test" class="responsive-img" src="https://unsplash.imgix.net/reserve/nE6neNVdRPSIasnmePZe_IMG_1950.jpg?dpr=1.25&fit=crop&fm=jpg&h=700&q=75&w=1050">
+                		</div>
+                	</div>
+                </section>

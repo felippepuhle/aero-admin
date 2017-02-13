@@ -1,0 +1,107 @@
+---
+layout: admin
+title: Components - Badges
+
+section: components
+module: components_badges
+
+header:
+    icon: crop_7_5
+    title: Badges
+    description: Badges can notify you that there are new or unread messages or notifications. Add the new class to the badge to give it the background.
+---
+
+				<section id="components_badges">
+					<!-- ########### -->
+					<!-- Collections -->
+					<!-- ########### -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Collections</h4>
+
+							<div class="collection">
+								<a href="#!" class="collection-item">Alan<span class="badge">1</span></a>
+								<a href="#!" class="collection-item">Alan<span class="new badge">4</span></a>
+								<a href="#!" class="collection-item">Alan</a>
+								<a href="#!" class="collection-item">Alan<span class="badge">14</span></a>
+							</div>
+
+	            <pre>
+	            	<code class="language-markup">
+&lt;div class="collection">
+	&lt;a href="#!" class="collection-item">Alan&lt;span class="badge">1&lt;/span>&lt;/a>
+	&lt;a href="#!" class="collection-item">Alan&lt;span class="new badge">4&lt;/span>&lt;/a>
+	&lt;a href="#!" class="collection-item">Alan&lt;/a>
+	&lt;a href="#!" class="collection-item">Alan&lt;span class="badge">14&lt;/span>&lt;/a>
+&lt;/div>
+	            	</code>
+	            </pre>
+						</div>
+					</div>
+
+
+					<!-- ################## -->
+					<!-- Badges in Dropdown -->
+					<!-- ################## -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Badges in Dropdown</h4>
+
+							<ul id="dropdown2" class="dropdown-content">
+								<li><a href="#!">one<span class="badge">1</span></a></li>
+								<li><a href="#!">two<span class="new badge">1</span></a></li>
+								<li><a href="#!">three</a></li>
+							</ul>
+							<a class="btn dropdown-button" href="#!" data-activates="dropdown2">Dropdown<i class="mdi-navigation-arrow-drop-down right"></i></a>
+
+							<pre>
+								<code class="language-markup">
+&lt;ul id="dropdown2" class="dropdown-content">
+	&lt;li>&lt;a href="#!">one&lt;span class="badge">1&lt;/span>&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="#!">two&lt;span class="new badge">1&lt;/span>&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="#!">three&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;a class="btn dropdown-button" href="#!" data-activates="dropdown2">Dropdown&lt;i class="mdi-navigation-arrow-drop-down right">&lt;/i>&lt;/a>
+								</code>
+							</pre>
+						</div>
+					</div>
+
+
+					<!-- ################ -->
+					<!-- Badges in Navbar -->
+					<!-- ################ -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Badges in Navbar</h4>
+
+							<nav>
+								<div class="col s12">
+									<div class="nav-wrapper">
+										<a href="" class="brand-logo">Logo</a>
+										<ul id="nav-mobile" class="right hide-on-med-and-down">
+											<li><a href="">sass</a></li>
+											<li><a href="">sass <span class="new badge">4</span></a></li>
+											<li><a href="">sass</a></li>
+										</ul>
+									</div>
+								</div>
+							</nav>
+
+							<pre>
+								<code class="language-markup">
+&lt;nav>
+	&lt;div class="nav-wrapper">
+		&lt;a href="" class="brand-logo">Logo&lt;/a>
+		&lt;ul id="nav-mobile" class="right hide-on-med-and-down">
+			&lt;li>&lt;a href="">sass&lt;/a>&lt;/li>
+			&lt;li>&lt;a href="">sass &lt;span class="new badge">4&lt;/span>&lt;/a>&lt;/li>
+			&lt;li>&lt;a href="">sass&lt;/a>&lt;/li>
+		&lt;/ul>
+	&lt;/div>
+&lt;/nav>
+								</code>
+							</pre>
+						</div>
+					</div>
+				</section>

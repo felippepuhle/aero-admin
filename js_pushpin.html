@@ -1,0 +1,130 @@
+---
+layout: admin
+title: Javascript - Pushpin
+
+section: js
+module: js_pushpin
+
+header:
+    icon: input
+    title: Pushpin
+    description: Pushpin is our fixed positioning plugin. You can check out our live examples - the fixed Table of Contents on the right.
+
+javascripts:
+    - js/table-of-contents.js
+---
+
+				<section id="js_pushpin">
+					<div class="row">
+						<div class="col s12 m9 l10">
+							<!-- ############################ -->
+							<!-- jQuery Plugin Initialization -->
+							<!-- ############################ -->
+							<div id="initialization" class="scrollspy">
+								<div class="row no-gutter">
+									<div class="col s12">
+										<h4 class="main-text lighten-1">jQuery Plugin Initialization</h4>
+
+										<pre>
+				            	<code class="language-javascript">
+$(document).ready(function(){
+	$('.tabs-wrapper .row').pushpin({ top: $('.tabs-wrapper').offset().top });
+});
+				            	</code>
+				            </pre>
+									</div>
+								</div>
+							</div>
+
+
+							<!-- ########### -->
+							<!-- CSS Classes -->
+							<!-- ########### -->
+							<div id="css-classes" class="scrollspy">
+								<div class="row no-gutter">
+									<div class="col s12">
+										<h4 class="main-text lighten-1">CSS Classes</h4>
+
+										<p>A pushpinned element has 3 states. One above and below the scrolling threshold, and the pinned state where the element becomes fixed. Because pushpin changes positioning, chances are your element will look different when the states change. Use these css classes to correctly style your 3 states.</p>
+
+										<pre>
+				            	<code class="language-css">
+// Class for when element is above threshold
+.pin-top {
+	position: relative;
+}
+
+// Class for when element is below threshold
+.pin-bottom {
+	position: relative;
+}
+
+// Class for when element is pinned
+.pinned {
+	position: fixed !important;
+}
+				            	</code>
+				            </pre>
+									</div>
+								</div>
+							</div>
+
+
+							<!-- ##################### -->
+							<!-- jQuery Plugin Options -->
+							<!-- ##################### -->
+							<div id="options" class="scrollspy">
+								<div class="row no-gutter margin-bottom-0">
+									<div class="col s12">
+										<h4 class="main-text lighten-1">jQuery Plugin Options</h4>
+
+										<table class="highlight">
+											<thead>
+												<tr>
+													<th>Option Name</th>
+													<th>Description</th>
+												</tr>
+											</thead>
+
+											<tbody>
+												<tr>
+													<td>Top</td>
+													<td>The distance in pixels from the top of the page where the element becomes fixed. (Default: 0)</td>
+												</tr>
+												<tr>
+													<td>Bottom</td>
+													<td>The distance in pixels from the top of the page where the elements stops being fixed. (Default: Infinity)</td>
+												</tr>
+												<tr>
+													<td>Offset</td>
+													<td>The offset from the top the element will be fixed at. (Default: 0)</td>
+												</tr>
+											</tbody>
+										</table>
+
+										<h5 class="margin-top-35">Removal</h5>
+
+										<p>To remove the pushpin from an element, pass in <code class="language-javascript">'remove'</code> as the option to the pushpin function.</p>
+
+				            <pre>
+				            	<code class="language-javascript">
+// Removes pushpin and pushpin classes
+$('.tabs-wrapper .row').pushpin('remove');
+				            	</code>
+				            </pre>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col hide-on-small-only m3 l2">
+							<div class="pushpin-wrapper">
+								<ul class="section table-of-contents">
+									<li><a href="#initialization">Initialization</a></li>
+									<li><a href="#css-classes">CSS Classes</a></li>
+									<li><a href="#options">Options</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>

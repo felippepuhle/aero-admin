@@ -1,0 +1,19 @@
+{
+  "name": "AeroAdmin",
+  "description": "A Material Design based admin template",
+  "version": "1.0.5",
+  "title": "Aero Admin",
+  "contributors": [
+    {
+      "name": "Felippe Rodrigo Puhle",
+      "email": "felippe.puhle@gmail.com"
+    }
+  ],
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.1.1"
+  }
+}

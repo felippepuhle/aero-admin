@@ -1,0 +1,19 @@
+name: Aero Admin
+author: Felippe Rodrigo Puhle
+email: lippezzin@gmail.com
+
+version: 1.0.5
+
+googleKey: AIzaSyDnpLZ0fMgBAP013xSGmK2VmHJ_jwmhzXE
+
+themeforestUser: lippep
+
+themeFluid: true
+themeColor: light
+mainColor: materialize-red
+alternativeColor: red
+
+highlighter: rouge
+encoding: utf-8
+
+exclude: [bower_components/, docker/, js/, node_modules/, sass/, apps_crud_upload.php, bower.json, gulpfile.js, gulpfile.production.js, package.json, package.production.json]

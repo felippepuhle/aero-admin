@@ -1,0 +1,17 @@
+.input-field .prefix ~ label {
+	width: calc(100% - 3rem) !important;
+}
+
+select.browser-default {
+	color: #737373;
+}
+
+nav .nav-wrapper {
+	form {
+		height: 100%;
+	}
+
+	.input-field {
+		height: 100%;
+	}
+}

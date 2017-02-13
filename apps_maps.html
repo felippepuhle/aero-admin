@@ -1,0 +1,77 @@
+---
+layout: admin
+title: APPs - Maps
+
+section: apps
+module: apps_maps
+
+header: 
+    icon: map
+    title: Maps
+    description: Some maps with Google Maps and AmCharts.
+
+stylesheets: 
+    - css/apps/maps.css
+
+javascripts: 
+    - bower_components/ammap3/ammap/ammap.js
+    - bower_components/ammap3/ammap/maps/js/worldLow.js
+    - bower_components/ammap3/ammap/themes/light.js
+    - js/apps/maps.js
+---
+
+				<script src="https://maps.googleapis.com/maps/api/js?key={{ site.googleKey }}"></script>
+
+				<section id="apps_maps">
+					<div class="maps-app">
+						<div class="row">
+							<div class="col s12">
+								<div class="card-panel alternative lighten-1">
+									You can download and use all <b>amCharts</b> products for free. The only limitation of the free version is that a small link to this web site will be displayed in the top left corner of your charts. If you would like to use charts without this link, or you appreciate the software and would like to support its creators, <a href="https://www.amcharts.com/online-store/" target="_blank">please purchase a commercial license</a>.
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<!-- ########### -->
+							<!-- Google Maps -->
+							<!-- ########### -->
+							<div class="col s12 l6">
+								<div class="panel panel-bordered">
+									<div class="panel-header">
+										<div class="title">
+											Google Maps
+										</div>
+										<div class="subtitle">
+											<a href="https://developers.google.com/maps/documentation/javascript/tutorial" target="_blank">Click here</a> to see the documentation.
+										</div>
+									</div>
+
+									<div class="panel-body">
+										<div id="gmap"></div>
+									</div>
+								</div>
+							</div>
+
+							<!-- ######## -->
+							<!-- AmCharts -->
+							<!-- ######## -->
+							<div class="col s12 l6">
+								<div class="panel panel-bordered panel-map z-depth-1">
+									<div class="panel-header">
+										<div class="title">
+											AmCharts
+										</div>
+										<div class="subtitle">
+											<a href="https://docs.amcharts.com/3/javascriptmaps/AmMap" target="_blank">Click here</a> to see the documentation.
+										</div>
+									</div>
+
+									<div class="panel-body">
+										<div id="ammap"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>

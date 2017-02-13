@@ -1,0 +1,140 @@
+---
+layout: admin
+title: APPs - CRUD
+
+section: apps
+module: apps_crud
+
+header: 
+    icon: pages
+    title: CRUD
+    description: A simple and practical CRUD application.
+
+stylesheets: 
+    - css/apps/crud.css
+
+javascripts: 
+    - bower_components/datatables/media/js/jquery.dataTables.js
+    - js/modals.js
+    - js/lock.js
+    - js/apps/crud_list.js
+---
+
+				<section id="apps_crud">
+					<div class="crud-app">
+						<div class="fixed-action-btn">
+							<a class="btn-floating btn-large tooltipped" data-tooltip="Add" data-position="top" data-delay="50" href="apps_crud_form.html">
+								<i class="large material-icons">add</i>
+							</a>
+							<button class="btn-floating btn-large white tooltipped scrollToTop" data-tooltip="Scroll to top" data-position="top" data-delay="50">
+								<i class="large material-icons">keyboard_arrow_up</i>
+							</button>
+							<button class="btn-floating btn-large tooltipped" id="btnDeleteAll" data-tooltip="Delete" data-position="top" data-delay="50" disabled>
+								<i class="large material-icons">delete</i>
+							</button>
+						</div>
+			
+						<div class="row">
+							<div class="col s12">
+								<table class="datatable bordered">
+									<thead>
+										<tr>
+											<th class="center-align" data-searchable="false" data-orderable="false">
+												<input type="checkbox" id="chkDeleteAll" class="checkToggle" 
+													data-target=".crud-app table tbody [type=checkbox]">
+												<label for="chkDeleteAll"></label>
+											</th>
+											<th>Name</th>
+											<th>Item Name</th>
+											<th>Item Price</th>
+											<th class="center-align" data-searchable="false" data-orderable="false">Actions</th>
+										</tr>
+									</thead>
+
+									<tbody>
+										<tr>
+											<td class="center-align">
+												<input type="checkbox" id="chkDeleteAlvin">
+												<label for="chkDeleteAlvin"></label>
+											</td>
+											<td>Alvin</td>
+											<td>Eclair</td>
+											<td>$0.87</td>
+											<td class="center-align">
+												<div class="btn-group">
+													<a href="apps_crud_form.html" class="btn-flat btn-small waves-effect">
+														<i class="material-icons">create</i>
+													</a>
+													
+													<a class="btn-flat btn-small waves-effect btnDelete">
+														<i class="material-icons">delete</i>
+													</a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="center-align">
+												<input type="checkbox" id="chkDeleteAlan">
+												<label for="chkDeleteAlan"></label>
+											</td>
+											<td>Alan</td>
+											<td>Jellybean</td>
+											<td>$3.76</td>
+											<td class="center-align">
+												<div class="btn-group">
+													<a href="apps_crud_form.html" class="btn-flat btn-small waves-effect">
+														<i class="material-icons">create</i>
+													</a>
+													
+													<a class="btn-flat btn-small waves-effect btnDelete">
+														<i class="material-icons">delete</i>
+													</a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="center-align">
+												<input type="checkbox" id="chkDeleteJonathan">
+												<label for="chkDeleteJonathan"></label>
+											</td>
+											<td>Jonathan</td>
+											<td>Lollipop</td>
+											<td>$7.00</td>
+											<td class="center-align">
+												<div class="btn-group">
+													<a href="apps_crud_form.html" class="btn-flat btn-small waves-effect">
+														<i class="material-icons">create</i>
+													</a>
+													
+													<a class="btn-flat btn-small waves-effect btnDelete">
+														<i class="material-icons">delete</i>
+													</a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="center-align">
+												<input type="checkbox" id="chkDeleteShannon">
+												<label for="chkDeleteShannon"></label>
+											</td>
+											<td>Shannon</td>
+											<td>KitKat</td>
+											<td>$9.99</td>
+											<td class="center-align">
+												<div class="btn-group">
+													<a href="apps_crud_form.html" class="btn-flat btn-small waves-effect">
+														<i class="material-icons">create</i>
+													</a>
+													
+													<a class="btn-flat btn-small waves-effect btnDelete">
+														<i class="material-icons">delete</i>
+													</a>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</section>

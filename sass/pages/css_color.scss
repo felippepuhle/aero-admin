@@ -1,0 +1,34 @@
+#css_color {
+	#color-palette-wraper {
+		color: rgba(0, 0, 0, 0.8);
+
+		.row .col {
+			> div {
+				height: 55px;
+				width: 100%;
+				padding: 0 15px;
+				line-height: 55px;
+				font-weight: 500;
+				font-size: 12px;
+				display: block;
+				box-sizing: border-box;
+			}
+		}
+
+		.black, 
+		[class*="darken-"] {
+			color: rgba(255, 255, 255, 0.9);
+		}
+
+		.row {
+			@media (max-width: 600px) {
+				margin-bottom: 0px;
+			}
+		}
+		.col {
+			@media (max-width: 600px) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}

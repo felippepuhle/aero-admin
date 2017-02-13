@@ -1,0 +1,198 @@
+/*
+ * Margins and paddings
+ */
+ @each $value in 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 {
+    .margin-#{$value} {
+        margin: 1px * $value !important;
+    }
+    .margin-top-#{$value} {
+        margin-top: 1px * $value !important;
+    }
+    .margin-right-#{$value} {
+        margin-right: 1px * $value !important;
+    }
+    .margin-bottom-#{$value} {
+        margin-bottom: 1px * $value !important;
+    }
+    .margin-left-#{$value} {
+        margin-left: 1px * $value !important;
+    }
+    .padding-#{$value} {
+        padding: 1px * $value !important;
+    }
+    .padding-top-#{$value} {
+        padding-top: 1px * $value !important;
+    }
+    .padding-right-#{$value} {
+        padding-right: 1px * $value !important;
+    }
+    .padding-bottom-#{$value} {
+        padding-bottom: 1px * $value !important;
+    }
+    .padding-left-#{$value} {
+        padding-left: 1px * $value !important;
+    }
+}
+
+
+/*
+ * Borders
+ */
+ @each $value in 0, 1 {
+    .border-#{$value} {
+        border-width: 1px * $value !important;
+    }
+    .border-top-#{$value} {
+        border-top-width: 1px * $value !important;
+    }
+    .border-right-#{$value} {
+        border-right-width: 1px * $value !important;
+    }
+    .border-bottom-#{$value} {
+        border-bottom-width: 1px * $value !important;
+    }
+    .border-left-#{$value} {
+        border-left-width: 1px * $value !important;
+    }
+}
+
+
+/*
+ * Font weights
+ */
+ @each $value in 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000 {
+    .font-weight-#{$value} {
+        font-weight: $value;
+    }
+}
+.bold {
+  font-weight: 500;
+}
+.bolder {
+  font-weight: 700;
+}
+
+
+/*
+ * Font sizes
+ */
+ @each $value in 9, 8, 7 {
+    .font-size-0-#{$value} {
+        font-size: 0.1rem * $value !important;
+    }
+}
+ @each $value in 95, 85, 75 {
+    .font-size-0-#{$value} {
+        font-size: 0.01rem * $value !important;
+    }
+}
+
+
+/*
+ * Row with no gutter
+ */
+ .row.no-gutter {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+
+
+/*
+ * Codes
+ */
+ :not(pre) > code[class*="language-"] {
+    padding: .1em;
+    border-radius: .3em;
+    background: #f5f2f0;
+    color: #323232;
+}
+.prettyprint {
+    position: relative;
+    background-color: #f5f2f0;
+    padding: 20px 15px !important;
+    border: solid 1px rgba(51,51,51,0.12) !important;
+    tab-size: 4;
+}
+.prettyprint[class*="language-"] {
+    padding: 40px 15px 20px !important
+}
+.prettyprint[class*="language-"]:before {
+    position: absolute;
+    padding: 1px 5px;
+    background: #e8e6e3;
+    top: 0;
+    left: 0;
+    color: #545454;
+    content: attr(data-language);
+    font-size: .9rem;
+    border: solid 1px rgba(51,51,51,0.12);
+    border-left: 0px;
+    border-top: 0px;
+}
+p code {
+  font-size: .95rem;
+  padding: 2px 3px;
+  background: #EFEFEF;
+}
+
+
+/*
+ * Waves
+ */
+ .waves-effect {
+    &.waves-lighten-1 .waves-ripple {
+      background-color: rgba(0, 0, 0, 0.18);
+  }
+  &.waves-lighten-2 .waves-ripple {
+      background-color: rgba(0, 0, 0, 0.16);
+  }
+  &.waves-lighten-3 .waves-ripple {
+      background-color: rgba(0, 0, 0, 0.14);
+  }
+  &.waves-lighten-4 .waves-ripple {
+      background-color: rgba(0, 0, 0, 0.12);
+  }
+  &.waves-lighten-5 .waves-ripple {
+      background-color: rgba(0, 0, 0, 0.10);
+  }
+  &.waves-darken-1 .waves-ripple {
+      background-color: rgba(0, 0, 0, 0.23);
+  }
+  &.waves-darken-2 .waves-ripple {
+      background-color: rgba(0, 0, 0, 0.26);
+  }
+  &.waves-darken-3 .waves-ripple {
+      background-color: rgba(0, 0, 0, 0.29);
+  }
+  &.waves-darken-4 .waves-ripple {
+      background-color: rgba(0, 0, 0, 0.32);
+  }
+
+  &.waves-light.waves-lighten-1 .waves-ripple {
+      background-color: rgba(255, 255, 255, 0.35);
+  }
+  &.waves-light.waves-lighten-2 .waves-ripple {
+      background-color: rgba(255, 255, 255, 0.30);
+  }
+  &.waves-light.waves-lighten-3 .waves-ripple {
+      background-color: rgba(255, 255, 255, 0.25);
+  }
+  &.waves-light.waves-lighten-4 .waves-ripple {
+      background-color: rgba(255, 255, 255, 0.20);
+  }
+  &.waves-light.waves-lighten-5 .waves-ripple {
+      background-color: rgba(255, 255, 255, 0.10);
+  }
+  &.waves-light.waves-darken-1 .waves-ripple {
+      background-color: rgba(255, 255, 255, 0.50);
+  }
+  &.waves-light.waves-darken-2 .waves-ripple {
+      background-color: rgba(255, 255, 255, 0.55);
+  }
+  &.waves-light.waves-darken-3 .waves-ripple {
+      background-color: rgba(255, 255, 255, 0.60);
+  }
+  &.waves-light.waves-darken-4 .waves-ripple {
+      background-color: rgba(255, 255, 255, 0.65);
+  }
+}

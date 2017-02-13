@@ -1,0 +1,89 @@
+---
+layout: admin
+title: Javascript - Scrollspy
+
+section: js
+module: js_scrollspy
+
+header:
+    icon: fingerprint
+    title: Scrollspy
+    description: Scrollspy is a jQuery plugin that tracks certain elements and which element the user's screen is currently centered on. Our main demo of this is our table of contents on every documentation page to the right. Clicking on these links will also scroll the page to that element.
+
+javascripts:
+    - js/table-of-contents.js
+---
+
+				<section id="js_scrollspy">
+					<div class="row">
+						<div class="col s12 m9 l10">
+							<!-- ######### -->
+							<!-- Structure -->
+							<!-- ######### -->
+							<div id="structure" class="scrollspy">
+								<div class="row no-gutter">
+									<div class="col s12">
+										<h4 class="main-text lighten-1">Structure</h4>
+
+										<pre>
+				            	<code class="language-html">
+&lt;div class="row">
+	&lt;div class="col s12 m9 l10">
+		&lt;div id="introduction" class="section scrollspy">
+			&lt;p>Content &lt;/p>
+		&lt;/div>
+
+		&lt;div id="structure" class="section scrollspy">
+			&lt;p>Content &lt;/p>
+		&lt;/div>
+
+		&lt;div id="initialization" class="section scrollspy">
+			&lt;p>Content &lt;/p>
+		&lt;/div>
+	&lt;/div>
+
+	&lt;div class="col hide-on-small-only m3 l2">
+			&lt;ul class="section table-of-contents">
+			&lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
+			&lt;li>&lt;a href="#structure">Structure&lt;/a>&lt;/li>
+			&lt;li>&lt;a href="#initialization">Intialization&lt;/a>&lt;/li>
+		&lt;/ul>
+	&lt;/div>
+&lt;/div>
+				            	</code>
+				            </pre>
+									</div>
+								</div>
+							</div>
+
+
+							<!-- ############## -->
+							<!-- Initialization -->
+							<!-- ############## -->
+							<div id="initialization" class="scrollspy">
+								<div class="row no-gutter margin-bottom-0">
+									<div class="col s12">
+										<h4 class="main-text lighten-1">Initialization</h4>
+
+										<pre>
+				            	<code class="language-javascript">
+$(document).ready(function(){
+	$('.scrollspy').scrollSpy();
+});
+				            	</code>
+				            </pre>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col hide-on-small-only m3 l2">
+							<div class="pushpin-wrapper">
+								<ul class="section table-of-contents">
+									<li><a href="#structure">Structure</a></li>
+									<li><a href="#initialization">Initialization</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>

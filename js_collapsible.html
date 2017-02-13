@@ -1,0 +1,207 @@
+---
+layout: admin
+title: Javascript - Collapsible
+
+section: js
+module: js_collapsible
+
+header:
+    icon: reorder
+    title: Collapsible
+    description: Collapsibles are accordion elements that expand when clicked on. They allow you to hide content that is not immediately relevant to the user.
+---
+
+				<section id="js_collapsible">
+					<!-- ############ -->
+					<!-- Introduction -->
+					<!-- ############ -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Introduction</h4>
+
+							<ul class="collapsible collapsible-accordion" data-collapsible="accordion">
+								<li>
+									<div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+									<div class="collapsible-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+								</li>
+								<li>
+									<div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+									<div class="collapsible-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+								</li>
+								<li>
+									<div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+									<div class="collapsible-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+
+					<!-- ###### -->
+					<!-- Popout -->
+					<!-- ###### -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Popout</h4>
+
+							<p>To create a popout collapsible, just add the class <code class="language-markup">popout</code>.</p>
+
+							<ul class="collapsible popout collapsible-accordion" data-collapsible="accordion">
+								<li>
+									<div class="collapsible-header"><i class="material-icons">subtitles</i>First</div>
+									<div class="collapsible-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+								</li>
+								<li>
+									<div class="collapsible-header active"><i class="material-icons">games</i>Second</div>
+									<div class="collapsible-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+								</li>
+								<li>
+									<div class="collapsible-header"><i class="material-icons">library_books</i>Third</div>
+									<div class="collapsible-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+								</li>
+							</ul>
+
+	            <pre>
+	            	<code class="language-markup">
+&lt;ul class="collapsible popout" data-collapsible="accordion">
+	            	</code>
+	            </pre>
+						</div>
+					</div>
+
+
+					<!-- ########################## -->
+					<!-- Collapsible HTML Structure -->
+					<!-- ########################## -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Collapsible HTML Structure</h4>
+
+	            <pre>
+	            	<code class="language-markup">
+&lt;ul class="collapsible" data-collapsible="accordion">
+	&lt;li>
+		&lt;div class="collapsible-header">&lt;i class="material-icons">filter_drama&lt;/i>First&lt;/div>
+		&lt;div class="collapsible-body">&lt;p>Lorem ipsum dolor sit amet.&lt;/p>&lt;/div>
+	&lt;/li>
+	&lt;li>
+		&lt;div class="collapsible-header">&lt;i class="material-icons">place&lt;/i>Second&lt;/div>
+		&lt;div class="collapsible-body">&lt;p>Lorem ipsum dolor sit amet.&lt;/p>&lt;/div>
+	&lt;/li>
+	&lt;li>
+		&lt;div class="collapsible-header">&lt;i class="material-icons">whatshot&lt;/i>Third&lt;/div>
+		&lt;div class="collapsible-body">&lt;p>Lorem ipsum dolor sit amet.&lt;/p>&lt;/div>
+	&lt;/li>
+&lt;/ul>
+	            	</code>
+	            </pre>
+						</div>
+					</div>
+
+
+					<!-- ############## -->
+					<!-- Initialization -->
+					<!-- ############## -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Initialization</h4>
+
+							<p>Collapsible elements only need initialization if they are added dynamically. You can also pass in options inside the initialization, however this can be done in the HTML markup as well.</p>
+
+	            <pre>
+	            	<code class="language-javascript">
+$(document).ready(function(){
+	$('.collapsible').collapsible({
+		accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+	});
+});
+	            	</code>
+	            </pre>
+
+	            <h5 class="margin-top-35">Preselected Section</h5>
+
+	            <p>If you want a collapsible with a preopened section just add the <code class="language-markup">active</code> class to the collapsible-header. </p>
+
+	            <ul class="collapsible collapsible-accordion" data-collapsible="accordion">
+	            	<li>
+	            		<div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+	            		<div class="collapsible-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+	            	</li>
+	            	<li>
+	            		<div class="collapsible-header active"><i class="material-icons">place</i>Second</div>
+	            		<div class="collapsible-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+	            	</li>
+	            	<li>
+	            		<div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+	            		<div class="collapsible-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+	            	</li>
+	            </ul>
+
+	            <pre>
+	            	<code class="language-markup">
+&lt;div class="collapsible-header active">&lt;i class="mdi-maps-place">&lt;/i>Second&lt;/div>
+	            	</code>
+	            </pre>
+						</div>
+					</div>
+
+
+					<!-- ####### -->
+					<!-- Options -->
+					<!-- ####### -->
+					<div class="row">
+						<div class="col s12">
+							<h4 class="main-text lighten-1">Options</h4>
+
+							<p>There are two ways a collapsible can behave. It can either allow multiple sections to stay open, or it can only allow one section to stay open at a time, which is called an accordion. See below for a demo of each type</p>
+
+							<h5 class="margin-top-35">Accordion</h5>
+
+							<ul class="collapsible" data-collapsible="accordion">
+								<li>
+									<div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+									<div class="collapsible-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p></div>
+								</li>
+								<li>
+									<div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+									<div class="collapsible-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+								</li>
+								<li>
+									<div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+									<div class="collapsible-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+								</li>
+							</ul>
+
+							<p>This is default behavior, but you can explicitly set it by setting the <code class="language-markup">data-collapsible</code> attribute in HTML.</p>
+
+	            <pre>
+	            	<code class="language-markup">
+&lt;ul class="collapsible" data-collapsible="accordion">
+	            	</code>
+	            </pre>
+
+	            <h5 class="margin-top-35">Expandable</h5>
+
+	            <ul class="collapsible" data-collapsible="expandable">
+	            	<li>
+	            		<div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+	            		<div class="collapsible-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+	            	</li>
+	            	<li>
+	            		<div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+	            		<div class="collapsible-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+	            	</li>
+	            	<li>
+	            		<div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+	            		<div class="collapsible-body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+	            	</li>
+	            </ul>
+
+	            <pre>
+	            	<code class="language-markup">
+&lt;ul class="collapsible" data-collapsible="expandable">
+	            	</code>
+	            </pre>
+						</div>
+					</div>
+				</section>
