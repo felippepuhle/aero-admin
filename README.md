@@ -6,6 +6,9 @@
 <p>Aero Admin is a Material Design based admin template. Using the Materialize CSS framework, we provide a clean and customizable dashboard to meet all your needs. Aero Admin was developed with passion to another passionate developers.</p>
 <p>Tips and suggestions are welcome, please <a href="http://www.felippepuhle.com.br" target="_blank">contact me</a>!</p>
 
+<h2>Preview</h2>
+<img src="https://github.com/felippepuhle/aero-admin/blob/master/_build/preview/preview.jpg">
+
 <h2>Features</h2>
 <ul>
 	<li>Material design template</li>
@@ -18,9 +21,6 @@
 	<li>Includes an CRUD app</li>
 	<li>Examples of code</li>
 </ul>
-
-<h2>Preview</h2>
-<img src="https://github.com/felippepuhle/aero-admin/blob/master/_build/preview/preview.jpg">
 
 <h2>Changelog</h2>
 <p><strong>v1.0.5 - Jan 02, 2017</strong></p>
