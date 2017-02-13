@@ -7,7 +7,12 @@
 <p>Tips and suggestions are welcome, please <a href="http://www.felippepuhle.com.br" target="_blank">contact me</a>!</p>
 
 <h2>Preview</h2>
-<img src="https://github.com/felippepuhle/aero-admin/blob/master/_build/preview/preview.jpg">
+<p>
+  <img src="https://github.com/felippepuhle/aero-admin/blob/master/_build/preview/preview.jpg">
+</p>
+<p>
+  <a href="http://demo.felippepuhle.com.br/aero/">Click here</a> to see the demo.
+</p>
 
 <h2>Features</h2>
 <ul>
